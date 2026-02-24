@@ -53,23 +53,23 @@ export const navigationConfig: NavigationConfig = {
   brandSubname: "by PAESTUM HOLIDAYS",
   tagline: "Curated Travel Experiences",
   navLinks: [
-    { name: "Home", href: "#home", icon: "Home" },
-    { 
-      name: "Experiences", 
-      href: "#experiences", 
+    { name: "nav.home", href: "#home", icon: "Home" },
+    {
+      name: "nav.experiences",
+      href: "#experiences",
       icon: "Grape",
       dropdown: [
-        { name: "Food & Wine", href: "#food-wine" },
-        { name: "Cultural Tours", href: "#cultural" },
-        { name: "Roots Holidays", href: "#roots" },
+        { name: "nav.foodWine", href: "#food-wine" },
+        { name: "nav.culturalTours", href: "#cultural" },
+        { name: "nav.rootsHolidays", href: "#roots" },
       ]
     },
-    { name: "Day Tours", href: "#tours", icon: "BookOpen" },
-    { name: "About", href: "#about", icon: "Users" },
-    { name: "Stories", href: "#stories", icon: "Newspaper" },
-    { name: "Contact", href: "#contact", icon: "Mail" },
+    { name: "nav.dayTours", href: "#tours", icon: "BookOpen" },
+    { name: "nav.about", href: "#about", icon: "Users" },
+    { name: "nav.stories", href: "#stories", icon: "Newspaper" },
+    { name: "nav.contact", href: "#contact", icon: "Mail" },
   ],
-  ctaButtonText: "Book Now",
+  ctaButtonText: "nav.bookNow",
 };
 
 // -----------------------------------------------------------------------------

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Compass, MapPin, Phone, Mail, Instagram, Facebook, Twitter, Youtube, ArrowUp, CheckCircle } from 'lucide-react';
 import { footerConfig } from '../config';
 
@@ -8,6 +9,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export function Footer() {
+  const { t } = useTranslation();
+
   // Null check: if config is empty, render nothing
   if (!footerConfig.brandName) return null;
 
@@ -59,7 +62,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <Compass className="w-8 h-8 text-gold-500" aria-hidden="true" />
+              <img src="/images/felix-dream-logo.png" alt="Felix Dream" className="w-10 h-10 object-contain" />
               <div>
                 <span className="font-serif text-xl text-white block">{footerConfig.brandName}</span>
                 {footerConfig.tagline && (
@@ -69,7 +72,7 @@ export function Footer() {
             </div>
             {footerConfig.description && (
               <p className="text-white/70 text-sm leading-relaxed mb-6">
-                {footerConfig.description}
+                {t('footer.desc')}
               </p>
             )}
             {/* Social Links */}
@@ -135,11 +138,11 @@ export function Footer() {
             {/* Newsletter */}
             {footerConfig.newsletterLabel && (
               <div className="mt-6 pt-6 border-t border-white/10">
-                <p className="text-white/70 text-sm mb-3">{footerConfig.newsletterLabel}</p>
+                <p className="text-white/70 text-sm mb-3">{t('footer.newsletter.label')}</p>
                 {newsletterStatus === 'success' ? (
                   <div className="flex items-center gap-2 text-green-400 text-sm">
                     <CheckCircle className="w-4 h-4" />
-                    <span>{footerConfig.newsletterSuccessText}</span>
+                    <span>{t('footer.newsletter.success')}</span>
                   </div>
                 ) : (
                   <form onSubmit={handleNewsletter} className="flex gap-2">
@@ -149,7 +152,7 @@ export function Footer() {
                       type="email"
                       value={newsletterEmail}
                       onChange={(e) => setNewsletterEmail(e.target.value)}
-                      placeholder={footerConfig.newsletterPlaceholder}
+                      placeholder={t('footer.newsletter.placeholder')}
                       required
                       autoComplete="email"
                       className="flex-1 px-3 py-2 bg-white/5 border border-white/20 rounded-sm text-white text-sm placeholder-white/40 focus:outline-none focus:border-gold-500 transition-colors"
@@ -158,12 +161,12 @@ export function Footer() {
                       type="submit"
                       className="px-4 py-2 bg-gold-500 text-white text-sm rounded-sm hover:bg-gold-600 transition-colors"
                     >
-                      {footerConfig.newsletterButtonText}
+                      {t('footer.newsletter.button')}
                     </button>
                   </form>
                 )}
                 {newsletterStatus === 'error' && (
-                  <p className="text-red-400 text-xs mt-2">{footerConfig.newsletterErrorText}</p>
+                  <p className="text-red-400 text-xs mt-2">{t('footer.newsletter.error')}</p>
                 )}
               </div>
             )}
@@ -199,7 +202,7 @@ export function Footer() {
               className="flex items-center gap-2 text-white/70 text-sm hover:text-gold-400 transition-colors group"
               aria-label={footerConfig.backToTopText}
             >
-              <span>{footerConfig.backToTopText}</span>
+              <span>{t('footer.backToTop')}</span>
               <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-gold-500 group-hover:bg-gold-500 transition-all duration-300">
                 <ArrowUp className="w-4 h-4" />
               </div>

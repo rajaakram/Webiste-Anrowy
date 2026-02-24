@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import { heroConfig } from '../config';
 
@@ -25,6 +26,8 @@ function useCountUp(target: number, duration = 2000, start = false) {
 }
 
 export function Hero({ isReady }: { isReady: boolean }) {
+  const { t } = useTranslation();
+
   // Null check: if config is empty, render nothing
   if (!heroConfig.mainTitle) return null;
 
@@ -65,7 +68,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
         <div className="absolute inset-0 hero-kenburns">
           <img
             src={heroConfig.backgroundImage}
-            alt={heroConfig.mainTitle}
+            alt={t('hero.title')}
             className="w-full h-full object-cover scale-105"
           />
         </div>
@@ -77,7 +80,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
         {/* Script accent */}
         <div className={`transition-all duration-1000 ease-out ${phase >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <span className="font-script text-5xl md:text-6xl lg:text-7xl text-gold-400">
-            {heroConfig.scriptText}
+            {t('hero.script')}
           </span>
         </div>
 
@@ -85,8 +88,8 @@ export function Hero({ isReady }: { isReady: boolean }) {
         <div className={`mx-auto my-6 h-px bg-gold-500/50 transition-all duration-1000 ease-out ${phase >= 2 ? 'w-24 opacity-100' : 'w-0 opacity-0'}`} style={{ transitionDelay: '0.2s' }} />
 
         {/* Main Title */}
-        <h1 className={`font-serif text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] text-white leading-[1.05] tracking-wide transition-all duration-1000 ease-out ${phase >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.3s' }}>
-          {heroConfig.mainTitle}
+        <h1 className={`font-serif text-5xl md:text-6xl lg:text-[5.5rem] xl:text-[6.5rem] text-white leading-[1.05] tracking-wide whitespace-pre-line transition-all duration-1000 ease-out ${phase >= 2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '0.3s' }}>
+          {t('hero.title')}
         </h1>
 
         {/* CTA */}
@@ -95,9 +98,9 @@ export function Hero({ isReady }: { isReady: boolean }) {
             <button
               onClick={() => scrollToSection(heroConfig.ctaTarget || '#wines')}
               className="btn-primary rounded-sm inline-flex items-center gap-2 group"
-              aria-label={heroConfig.ctaButtonText}
+              aria-label={t('hero.cta')}
             >
-              {heroConfig.ctaButtonText}
+              {t('hero.cta')}
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
             </button>
           </div>
@@ -114,7 +117,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
                   <div className="font-serif text-3xl md:text-4xl text-gold-500 mb-2 tabular-nums">
                     {counts[index]}{stat.suffix}
                   </div>
-                  <div className="text-xs md:text-sm text-white/70 uppercase tracking-wider">{stat.label}</div>
+                  <div className="text-xs md:text-sm text-white/70 uppercase tracking-wider">{t(`hero.stats.${['years', 'travelers', 'languages', 'rating'][index]}`)}</div>
                 </div>
               ))}
             </div>
@@ -129,7 +132,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
       {heroConfig.decorativeText && (
         <div className={`absolute left-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-4 transition-opacity duration-1000 ${phase >= 3 ? 'opacity-100' : 'opacity-0'}`}>
           <div className="w-px h-20 bg-gradient-to-b from-transparent via-gold-500/50 to-transparent" />
-          <span className="text-gold-500 text-xs tracking-widest" style={{ writingMode: 'vertical-lr' }}>{heroConfig.decorativeText}</span>
+          <span className="text-gold-500 text-xs tracking-widest" style={{ writingMode: 'vertical-lr' }}>{t('hero.decorative')}</span>
           <div className="w-px h-20 bg-gradient-to-b from-transparent via-gold-500/50 to-transparent" />
         </div>
       )}

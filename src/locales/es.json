@@ -1,0 +1,284 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "experiences": "Experiencias",
+        "foodWine": "Gastronomía y Vino",
+        "culturalTours": "Tours Culturales",
+        "rootsHolidays": "Viajes de Raíces",
+        "dayTours": "Excursiones",
+        "about": "Conócenos",
+        "stories": "Historias",
+        "contact": "Contacto",
+        "bookNow": "Reservar Ahora"
+    },
+    "hero": {
+        "script": "La dolce vita del Cilento",
+        "title": "El Cilento que\nnunca has visto",
+        "cta": "Explorar Experiencias",
+        "stats": {
+            "years": "Años de Experiencia",
+            "travelers": "Viajeros Felices",
+            "languages": "Idiomas Hablados",
+            "rating": "Valoración Google"
+        },
+        "decorative": "VIAJES A MEDIDA"
+    },
+    "experiences": {
+        "script": "Experiencias Seleccionadas",
+        "subtitle": "VIAJES PERSONALIZADOS",
+        "title": "Descubre tu Experiencia\nPerfecta en Cilento",
+        "items": {
+            "foodWine": {
+                "name": "Med(eat)erráneo",
+                "subtitle": "Viaje Culinario",
+                "duration": "5 Días",
+                "desc": "Tomates madurados al sol, mozzarella artesanal, viñedos antiguos y atardeceres sobre el Mediterráneo. Un viaje inmersivo por los sabores auténticos del Cilento.",
+                "notes": "Experiencias directas con productores locales",
+                "alcohol": "Catas de vino en 3 bodegas boutique",
+                "temp": "Clases de cocina con 'Nonnas'",
+                "aging": "Desde 890 € por persona"
+            },
+            "cultural": {
+                "name": "Explorador del Patrimonio",
+                "subtitle": "Inmersión Cultural",
+                "duration": "7 Días",
+                "desc": "Camina entre antiguos templos griegos en Paestum, explora pueblos medievales en las colinas y descubre la rica historia que hace único al Cilento.",
+                "notes": "Tours privados en sitios arqueológicos",
+                "alcohol": "Experiencias Patrimonio de la UNESCO",
+                "temp": "Talleres con artesanos locales",
+                "aging": "Desde 1.290 € por persona"
+            },
+            "roots": {
+                "name": "Retorno a las Raíces",
+                "subtitle": "Viaje a los Orígenes",
+                "duration": "10 Días",
+                "desc": "Reconecta con tu herencia italiana. Camina por las calles de tus antepasados, conoce parientes lejanos y descubre el pueblo que guarda la historia de tu familia.",
+                "notes": "Asistencia en investigación genealógica",
+                "alcohol": "Visitas a los pueblos y encuentros familiares",
+                "temp": "Servicios de búsqueda de documentos",
+                "aging": "Desde 2.500 € por persona"
+            }
+        },
+        "features": {
+            "expertise": {
+                "title": "Experiencia Local",
+                "desc": "Más de 20 años de conocimiento profundo de las joyas ocultas y experiencias auténticas del Cilento."
+            },
+            "personal": {
+                "title": "Toque Personal",
+                "desc": "Cada viaje es diseñado personalmente por Teresa para adaptarse a tus intereses y ritmo."
+            },
+            "flexible": {
+                "title": "Ritmo Flexible",
+                "desc": "Sin tours apresurados. Tiempo para saborear cada momento, conectar con la gente local y experimentar de verdad el Cilento."
+            },
+            "authentic": {
+                "title": "Acceso Auténtico",
+                "desc": "Acceso exclusivo a granjas familiares, viñedos privados y hogares locales fuera del circuito turístico habitual."
+            }
+        },
+        "quote": "Teresa no solo nos mostró Campania, nos hizo sentir como si perteneciéramos allí."
+    },
+    "destinations": {
+        "script": "Explorar",
+        "subtitle": "DESTINOS",
+        "title": "Descubre los Tesoros\nOcultos de Campania",
+        "items": {
+            "castellabate": {
+                "title": "Castellabate",
+                "subtitle": "Pueblo Medieval",
+                "area": "Patrimonio",
+                "unit": "UNESCO",
+                "desc": "Pasea por estrechas calles empedradas, admira vistas panorámicas del Mediterráneo y vive la auténtica vida de pueblo en esta joya medieval."
+            },
+            "marina": {
+                "title": "Marina di Camerota",
+                "subtitle": "Paraíso Costero",
+                "area": "30+",
+                "unit": "Calas Escondidas",
+                "desc": "Aguas cristalinas, espectaculares cuevas marinas y playas vírgenes la convierten en la joya de la costa del Cilento."
+            },
+            "paestum": {
+                "title": "Templos de Paestum",
+                "subtitle": "Antiguas Ruinas Griegas",
+                "area": "2.500",
+                "unit": "Años de Historia",
+                "desc": "Maravíllate ante tres de los templos griegos antiguos mejor conservados del mundo, rodeados de belleza atemporal."
+            },
+            "amalfi": {
+                "title": "Costa Amalfitana",
+                "subtitle": "Belleza Costera",
+                "area": "50km",
+                "unit": "Ruta Escénica",
+                "desc": "Acantilados espectaculares, coloridos pueblos aferrados a las montañas y la legendaria belleza de la costa más famosa de Italia."
+            }
+        }
+    },
+    "dayTours": {
+        "script": "Excursiones",
+        "subtitle": "AVENTURAS DE UN DÍA",
+        "title": "Explora el Cilento\nen un Día",
+        "intro": "Perfecto para quienes tienen poco tiempo o como adición a una estancia más larga. Cada tour está diseñado para maximizar tu experiencia.",
+        "items": {
+            "paestum": {
+                "name": "Paestum: Templos y Museo",
+                "duration": "6 horas",
+                "price": "Desde 89 €",
+                "desc": "Camina entre antiguos templos griegos y explora el fascinante museo arqueológico."
+            },
+            "amalfi": {
+                "name": "Ruta por la Costa Amalfitana",
+                "duration": "8 horas",
+                "price": "Desde 149 €",
+                "desc": "Experimenta la belleza dramática de la costa más famosa del mundo."
+            },
+            "ebike": {
+                "name": "Tour en E-Bike por los Viñedos",
+                "duration": "5 horas",
+                "price": "Desde 115 €",
+                "desc": "Pedalea por onduladas colinas hasta bodegas exclusivas para catar vinos y disfrutar de un almuerzo local."
+            }
+        }
+    },
+    "about": {
+        "script": "Conoce a Teresa",
+        "subtitle": "TU EXPERTA LOCAL",
+        "title": "El Corazón Detrás\nde tu Viaje",
+        "intro": "Durante más de 20 años, Teresa ha compartido su amado Cilento con viajeros de todo el mundo. Sus profundas conexiones, conocimiento local y pasión genuina crean experiencias que transforman a los visitantes en familia.",
+        "timeline": {
+            "2004": "Fundación de Paestum Holidays",
+            "2010": "Primer Viaje a las Raíces organizado",
+            "2015": "Expansión a toda la región de Campania",
+            "2020": "Celebración de los 500 viajeros felices",
+            "2024": "Lanzamiento de la marca FELIX DREAM"
+        },
+        "tabs": {
+            "story": {
+                "name": "La Historia de Teresa",
+                "title": "Nacida y Criada en el Cilento",
+                "desc": "Teresa creció entre los olivares y viñedos del Cilento. Su infancia estuvo llena de los sabores de la cocina de su abuela, las historias de los ancianos del pueblo y los antiguos ritmos de la vida mediterránea.",
+                "highlight": "Cada viaje que creo es personal, porque el Cilento no es solo mi trabajo, es donde vive mi corazón."
+            },
+            "philosophy": {
+                "name": "Filosofia",
+                "title": "Viajes que Transforman",
+                "desc": "Teresa cree que las mejores experiencias de viaje provienen de la conexión humana genuina. Su enfoque combina un profundo conocimiento local con una comprensión intuitiva de lo que busca cada viajero.",
+                "highlight": "No planifico itinerarios: diseño viajes que tocan el alma."
+            },
+            "expertise": {
+                "name": "Experiencia",
+                "title": "20+ Años de Conocimiento Local",
+                "desc": "Fluida en cuatro idiomas, Teresa ha construido relaciones con agricultores, artesanos, chefs y familias en toda Campania. Esta red abre puertas que permanecen cerradas a los turistas típicos.",
+                "highlight": "Mis contactos son tu pasaporte a la Italia más auténtica."
+            }
+        },
+        "hours": "Disponible los 7 días de la semana",
+        "hoursLabel": "Disponibilidad",
+        "cta": "Conoce a Teresa",
+        "years": "Años",
+        "quote": "El conocimiento que tiene Teresa del Cilento es enciclopédico, pero fue su calidez humana y cuidado genuino lo que hizo nuestro viaje inolvidable."
+    },
+    "stories": {
+        "script": "Historias",
+        "subtitle": "INSPIRACIÓN PARA VIAJAR",
+        "title": "Cuentos del\nCilento",
+        "viewAll": "Ver Todas las Historias",
+        "readMore": "Leer Más →",
+        "articles": {
+            "wine": {
+                "title": "El Arte del Vino Cilentano",
+                "desc": "Descubre las antiguas tradiciones vinícolas que han moldeado esta región durante milenios, desde variedades de uva autóctonas hasta bodegas familiares.",
+                "category": "Gastronomía"
+            },
+            "hiking": {
+                "title": "Senderos Ocultos del Parque Nacional",
+                "desc": "Explora los caminos secretos que serpentean por el parque nacional más grande de Europa, desde acantilados costeros hasta picos montañosos.",
+                "category": "Aventura"
+            },
+            "roots": {
+                "title": "Encontrando la Familia: Reencuentro",
+                "desc": "Sigue el emotivo viaje de una familia mientras se reconectan con su pueblo ancestral y descubren parientes vivos.",
+                "category": "Herencia"
+            },
+            "mozzarella": {
+                "title": "La Ruta de la Mozzarella",
+                "desc": "De las granjas de búfalas a tu mesa, vive el viaje del queso más querido de Italia en su auténtico hogar.",
+                "category": "Gastronomía"
+            }
+        },
+        "testimonials": {
+            "script": "Testimonios",
+            "subtitle": "HISTORIAS DE VIAJEROS",
+            "title": "Palabras de\nNuestros Huéspedes",
+            "1": "Teresa no solo nos mostró Campania, nos hizo sentir como si perteneciéramos allí. Cada comida, cada conversación y cada vista fueron elegidas con cuidado.",
+            "2": "Después de 40 años preguntándome sobre el pueblo de mi abuelo, Teresa me ayudó a caminar por esas mismas calles y conocer a una familia que nunca supe que tenía.",
+            "3": "Hemos viajado extensamente por Italia, pero el Cilento con Teresa nos mostró un lado del país que nunca supimos que existía. Auténtico, cálido e inolvidable."
+        },
+        "story": {
+            "script": "Nuestra Historia",
+            "subtitle": "EL VIAJE",
+            "title": "Dos Décadas\nde Recuerdos",
+            "p1": "Lo que comenzó como compartir mi amado Cilento con amigos curiosos se ha convertido en el trabajo de mi vida: diseñar experiencias de viaje transformadoras. Cada viaje está impregnado con la misma pasión y toque personal.",
+            "p2": "Durante más de 20 años, he tenido el privilegio de mostrar a cientos de viajeros el auténtico alma del sur de Italia, no por rutas turísticas masivas, sino en los rincones escondidos donde viven las tradiciones.",
+            "quote": "Los mejores viajes no te muestran lugares nuevos, sino que revelan partes nuevas de ti mismo."
+        }
+    },
+    "contact": {
+        "script": "Ponte en Contacto",
+        "subtitle": "COMIENZA TU VIAJE",
+        "title": "Planifiquemos tu\nViaje Perfecto",
+        "intro": "Todo gran viaje comienza con una conversación. Comparte tus sueños y Teresa diseñará una experiencia que los superará.",
+        "infoTitle": "Información de Contacto",
+        "info": {
+            "location": "Ubicación",
+            "whatsapp": "WhatsApp",
+            "whatsappSub": "Disponible toda la semana",
+            "email": "Email",
+            "emailSub": "Respondemos en 24h",
+            "languages": "Idiomas",
+            "languagesSub": "Italiano, Español, Inglés, Alemán"
+        },
+        "form": {
+            "nameLabel": "Nombre Completo",
+            "namePlaceholder": "Tu nombre",
+            "emailLabel": "Dirección de Correo",
+            "emailPlaceholder": "correo@ejemplo.com",
+            "phoneLabel": "Teléfono (opcional)",
+            "phonePlaceholder": "+34 600 000 000",
+            "dateLabel": "Fecha Preferida de Viaje",
+            "guestsLabel": "Número de Viajeros",
+            "messageLabel": "Cuéntanos sobre el Viaje de tus Sueños",
+            "messagePlaceholder": "¿Qué tipo de experiencias buscas? ¿Algún interés o petición especial?",
+            "submit": "Enviar Solicitud →",
+            "submitting": "Enviando...",
+            "success": "¡Gracias! Nos pondremos en contacto en 24 horas.",
+            "error": "Algo salió mal. Por favor, inténtalo de nuevo o contáctanos directamente.",
+            "privacy": "Tu información es confidencial y solo se usará para planificar tu viaje con nosotros."
+        }
+    },
+    "footer": {
+        "desc": "Experiencias de viaje seleccionadas en Cilento, Italia. Viajes auténticos creados con pasión y más de 20 años de experiencia local.",
+        "groups": {
+            "discover": "Descubrir",
+            "services": "Servicios",
+            "connect": "Conectar",
+            "legal": "Legal"
+        },
+        "newsletter": {
+            "label": "Suscríbete a nuestra newsletter",
+            "placeholder": "Tu dirección de email",
+            "button": "Suscribirse",
+            "success": "¡Gracias por suscribirte!",
+            "error": "Hubo un error. Por favor, inténtalo de nuevo."
+        },
+        "backToTop": "Volver arriba"
+    },
+    "common": {
+        "months": {
+            "jan": "Enero",
+            "feb": "Febrero",
+            "nov": "Noviembre",
+            "dec": "Diciembre"
+        }
+    }
+}

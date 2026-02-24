@@ -1,8 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
 import { destinationsCarouselConfig, navigationConfig } from '../config';
 
+// Map slide indices to translation keys
+const slideKeys = ['castellabate', 'marina', 'paestum', 'amalfi'];
+
 export function DestinationsCarousel() {
+  const { t } = useTranslation();
+
   // Null check: if config is empty, render nothing
   if (!destinationsCarouselConfig.mainTitle || destinationsCarouselConfig.slides.length === 0) return null;
 
@@ -71,12 +77,12 @@ export function DestinationsCarousel() {
       <div className="container-custom relative">
         {/* Section Header */}
         <div className="fade-up text-center mb-12">
-          <span className="font-script text-3xl text-gold-400 block mb-2">{destinationsCarouselConfig.scriptText}</span>
+          <span className="font-script text-3xl text-gold-400 block mb-2">{t('destinations.script')}</span>
           <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
-            {destinationsCarouselConfig.subtitle}
+            {t('destinations.subtitle')}
           </span>
           <h2 className="font-serif text-h1 text-white whitespace-pre-line">
-            {destinationsCarouselConfig.mainTitle}
+            {t('destinations.title')}
           </h2>
         </div>
 
@@ -88,15 +94,14 @@ export function DestinationsCarousel() {
               {slides.map((slide, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 transition-all duration-600 ease-out ${
-                    index === currentSlide
-                      ? 'opacity-100 scale-100 z-10'
-                      : index === (currentSlide - 1 + slides.length) % slides.length && direction === 'next'
-                        ? 'opacity-0 -translate-x-full z-0'
-                        : index === (currentSlide + 1) % slides.length && direction === 'prev'
-                          ? 'opacity-0 translate-x-full z-0'
-                          : 'opacity-0 z-0'
-                  }`}
+                  className={`absolute inset-0 transition-all duration-600 ease-out ${index === currentSlide
+                    ? 'opacity-100 scale-100 z-10'
+                    : index === (currentSlide - 1 + slides.length) % slides.length && direction === 'next'
+                      ? 'opacity-0 -translate-x-full z-0'
+                      : index === (currentSlide + 1) % slides.length && direction === 'prev'
+                        ? 'opacity-0 translate-x-full z-0'
+                        : 'opacity-0 z-0'
+                    }`}
                 >
                   <img
                     src={slide.image}
@@ -132,11 +137,10 @@ export function DestinationsCarousel() {
                   <button
                     key={index}
                     onClick={() => goToSlide(index, index > currentSlide ? 'next' : 'prev')}
-                    className={`h-1 rounded-full transition-all duration-300 ${
-                      index === currentSlide
-                        ? 'w-8 bg-gold-500'
-                        : 'w-4 bg-white/40 hover:bg-white/60'
-                    }`}
+                    className={`h-1 rounded-full transition-all duration-300 ${index === currentSlide
+                      ? 'w-8 bg-gold-500'
+                      : 'w-4 bg-white/40 hover:bg-white/60'
+                      }`}
                     aria-label={`Go to slide ${index + 1}: ${slides[index].title}`}
                   />
                 ))}
@@ -145,14 +149,13 @@ export function DestinationsCarousel() {
 
             {/* Content Side */}
             <div className="lg:bg-white/5 lg:border-y lg:border-r lg:border-white/10 lg:rounded-r-lg p-8 lg:p-12 flex flex-col justify-center relative overflow-hidden">
-              {slides.map((slide, index) => (
+              {slides.map((_, index) => (
                 <div
                   key={index}
-                  className={`transition-all duration-500 ${
-                    index === currentSlide
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-4 absolute'
-                  }`}
+                  className={`transition-all duration-500 ${index === currentSlide
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-4 absolute'
+                    }`}
                   style={{ display: index === currentSlide ? 'block' : 'none' }}
                 >
                   {/* Location Tag */}
@@ -165,23 +168,23 @@ export function DestinationsCarousel() {
 
                   {/* Title */}
                   <h3 className="font-serif text-h3 text-white mb-2">
-                    {slide.title}
+                    {t(`destinations.items.${slideKeys[index]}.title`)}
                   </h3>
                   <p className="text-white/70 text-lg mb-6">
-                    {slide.subtitle}
+                    {t(`destinations.items.${slideKeys[index]}.subtitle`)}
                   </p>
 
                   {/* Area Stats */}
                   <div className="flex items-baseline gap-2 mb-6">
                     <span className="font-serif text-5xl lg:text-6xl text-gold-500">
-                      {slide.area}
+                      {t(`destinations.items.${slideKeys[index]}.area`)}
                     </span>
-                    <span className="text-white/70 text-lg">{slide.unit}</span>
+                    <span className="text-white/70 text-lg">{t(`destinations.items.${slideKeys[index]}.unit`)}</span>
                   </div>
 
                   {/* Description */}
                   <p className="text-white/75 leading-relaxed mb-8">
-                    {slide.description}
+                    {t(`destinations.items.${slideKeys[index]}.desc`)}
                   </p>
 
                   {/* CTA */}
@@ -192,9 +195,9 @@ export function DestinationsCarousel() {
                         if (element) element.scrollIntoView({ behavior: 'smooth' });
                       }}
                       className="btn-dark rounded-sm"
-                      aria-label={navigationConfig.ctaButtonText}
+                      aria-label={t(navigationConfig.ctaButtonText)}
                     >
-                      {navigationConfig.ctaButtonText}
+                      {t(navigationConfig.ctaButtonText)}
                     </button>
                   )}
                 </div>

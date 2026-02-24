@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { History, Award, BookOpen } from 'lucide-react';
 import { aboutConfig } from '../config';
 
@@ -8,6 +9,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export function About() {
+  const { t } = useTranslation();
+
   // Null check: if config is empty, render nothing
   if (!aboutConfig.mainTitle) return null;
 
@@ -49,19 +52,19 @@ export function About() {
           <div>
             {/* Section Header */}
             <div className="slide-in-left mb-10">
-              <span className="font-script text-3xl text-gold-400 block mb-2">{aboutConfig.scriptText}</span>
+              <span className="font-script text-3xl text-gold-400 block mb-2">{t('about.script')}</span>
               <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
-                {aboutConfig.subtitle}
+                {t('about.subtitle')}
               </span>
               <h2 className="font-serif text-h1 text-white has-bar whitespace-pre-line">
-                {aboutConfig.mainTitle}
+                {t('about.title')}
               </h2>
             </div>
 
             {/* Introduction */}
             {aboutConfig.introText && (
               <p className="fade-up text-white/75 leading-relaxed mb-10" style={{ transitionDelay: '0.1s' }}>
-                {aboutConfig.introText}
+                {t('about.intro')}
               </p>
             )}
 
@@ -75,14 +78,13 @@ export function About() {
                       key={tab.id}
                       onClick={() => setActiveTab(tab.id)}
                       aria-pressed={activeTab === tab.id}
-                      className={`flex items-center gap-2 px-4 py-2.5 rounded-sm text-sm transition-all duration-300 ${
-                        activeTab === tab.id
+                      className={`flex items-center gap-2 px-4 py-2.5 rounded-sm text-sm transition-all duration-300 ${activeTab === tab.id
                           ? 'bg-gold-500 text-white'
                           : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
-                      }`}
+                        }`}
                     >
                       {IconComponent && <IconComponent className="w-4 h-4" />}
-                      {tab.name}
+                      {t(`about.tabs.${tab.id}.name`)}
                     </button>
                   );
                 })}
@@ -94,15 +96,15 @@ export function About() {
               {activeTabData && (
                 <div className="p-6 bg-white/5 rounded-lg border border-white/10 transition-all duration-300">
                   <h3 className="font-serif text-h5 text-white mb-4">
-                    {activeTabData.content.title}
+                    {t(`about.tabs.${activeTab}.title`)}
                   </h3>
                   <p className="text-white/75 leading-relaxed mb-4">
-                    {activeTabData.content.description}
+                    {t(`about.tabs.${activeTab}.desc`)}
                   </p>
                   <div className="flex items-center gap-3 text-gold-500">
                     <div className="w-8 h-px bg-gold-500" />
                     <span className="text-sm font-medium">
-                      {activeTabData.content.highlight}
+                      {t(`about.tabs.${activeTab}.highlight`)}
                     </span>
                   </div>
                 </div>
@@ -121,7 +123,7 @@ export function About() {
                       <div key={event.year} className="relative flex flex-col items-center flex-shrink-0 min-w-[70px]">
                         <div className="w-2.5 h-2.5 rounded-full bg-[#141414] border-2 border-gold-500 z-10" />
                         <span className="font-serif text-sm text-gold-500 mt-2">{event.year}</span>
-                        <span className="text-[11px] text-white/60 mt-0.5 text-center whitespace-nowrap">{event.event}</span>
+                        <span className="text-[11px] text-white/60 mt-0.5 text-center whitespace-nowrap">{t(`about.timeline.${event.year}`)}</span>
                       </div>
                     ))}
                   </div>
@@ -149,7 +151,7 @@ export function About() {
                     </p>
                   )}
                   <p className="text-white/70 text-sm italic">
-                    "{aboutConfig.quote.text}"
+                    "{t('about.quote')}"
                   </p>
                   {aboutConfig.quote.attribution && (
                     <p className="text-gold-500 text-xs mt-2">
@@ -167,11 +169,10 @@ export function About() {
               {aboutConfig.tabs.map((tab) => (
                 <div
                   key={tab.id}
-                  className={`absolute inset-0 transition-all duration-500 ${
-                    activeTab === tab.id
+                  className={`absolute inset-0 transition-all duration-500 ${activeTab === tab.id
                       ? 'opacity-100 scale-100'
                       : 'opacity-0 scale-105'
-                  }`}
+                    }`}
                 >
                   <img
                     src={tab.image}
@@ -197,8 +198,8 @@ export function About() {
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
                 <div className="flex items-center justify-between">
                   <div>
-                    {aboutConfig.openingHoursLabel && <p className="text-gold-400 text-sm">{aboutConfig.openingHoursLabel}</p>}
-                    {aboutConfig.openingHours && <p className="text-white text-lg">{aboutConfig.openingHours}</p>}
+                    {aboutConfig.openingHoursLabel && <p className="text-gold-400 text-sm">{t('about.hoursLabel')}</p>}
+                    {aboutConfig.openingHours && <p className="text-white text-lg">{t('about.hours')}</p>}
                   </div>
                   {aboutConfig.ctaButtonText && (
                     <button
@@ -207,9 +208,9 @@ export function About() {
                         if (element) element.scrollIntoView({ behavior: 'smooth' });
                       }}
                       className="btn-primary rounded-sm text-sm px-6"
-                      aria-label={aboutConfig.ctaButtonText}
+                      aria-label={t('about.cta')}
                     >
-                      {aboutConfig.ctaButtonText}
+                      {t('about.cta')}
                     </button>
                   )}
                 </div>

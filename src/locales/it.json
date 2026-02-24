@@ -1,0 +1,284 @@
+{
+    "nav": {
+        "home": "Home",
+        "experiences": "Esperienze",
+        "foodWine": "Enogastronomia",
+        "culturalTours": "Tour Culturali",
+        "rootsHolidays": "Turismo delle Radici",
+        "dayTours": "Escursioni",
+        "about": "Chi Siamo",
+        "stories": "Storie",
+        "contact": "Contatti",
+        "bookNow": "Prenota Ora"
+    },
+    "hero": {
+        "script": "La dolce vita del Cilento",
+        "title": "Il Cilento che\nnon hai mai visto",
+        "cta": "Esplora le Esperienze",
+        "stats": {
+            "years": "Anni di Esperienza",
+            "travelers": "Viaggiatori Felici",
+            "languages": "Lingue Parlate",
+            "rating": "Valutazione Google"
+        },
+        "decorative": "VIAGGI SU MISURA"
+    },
+    "experiences": {
+        "script": "Esperienze Curate",
+        "subtitle": "VIAGGI PERSONALIZZATI",
+        "title": "Scopri la Tua Esperienza\nCilentana Perfetta",
+        "items": {
+            "foodWine": {
+                "name": "Med(eat)erraneo",
+                "subtitle": "Viaggio Culinario",
+                "duration": "5 Giorni",
+                "desc": "Pomodori maturati al sole, mozzarella filata a mano, vigneti antichi e tramonti sul Mediterraneo. Un viaggio immersivo tra i sapori autentici del Cilento.",
+                "notes": "Esperienze dal produttore al consumatore",
+                "alcohol": "Degustazioni in 3 cantine boutique",
+                "temp": "Corsi di cucina con le Nonne",
+                "aging": "Da €890 a persona"
+            },
+            "cultural": {
+                "name": "Esploratore del Patrimonio",
+                "subtitle": "Immersione Culturale",
+                "duration": "7 Giorni",
+                "desc": "Passeggia tra gli antichi templi greci di Paestum, esplora borghi medievali e scopri la ricca storia che rende il Cilento unico.",
+                "notes": "Tour guidati privati di siti archeologici",
+                "alcohol": "Esperienze Patrimonio UNESCO",
+                "temp": "Laboratori di artigianato locale",
+                "aging": "Da €1.290 a persona"
+            },
+            "roots": {
+                "name": "Ritorno alle Radici",
+                "subtitle": "Viaggio delle Radici",
+                "duration": "10 Giorni",
+                "desc": "Riconnettiti con le tue origini italiane. Cammina nelle strade dei tuoi antenati, incontra parenti lontani e scopri il paese che custodisce la storia della tua famiglia.",
+                "notes": "Assistenza per ricerche genealogiche",
+                "alcohol": "Visite nei borghi e incontri con la famiglia",
+                "temp": "Servizi di recupero documenti",
+                "aging": "Da €2.500 a persona"
+            }
+        },
+        "features": {
+            "expertise": {
+                "title": "Esperienza Locale",
+                "desc": "Oltre 20 anni di conoscenza approfondita delle gemme nascoste e delle esperienze autentiche del Cilento."
+            },
+            "personal": {
+                "title": "Tocco Personale",
+                "desc": "Ogni viaggio è curato personalmente da Teresa in base ai tuoi interessi e ritmi."
+            },
+            "flexible": {
+                "title": "Ritmi Flessibili",
+                "desc": "Nessun tour frettoloso. Il tempo di assaporare ogni momento, connettersi con la gente e vivere davvero il Cilento."
+            },
+            "authentic": {
+                "title": "Accesso Esclusivo",
+                "desc": "Accesso privilegiato alle fattorie familiari, vigne private e case locali, lontano dai percorsi turistici affollati."
+            }
+        },
+        "quote": "Teresa non ci ha solo fatto vedere la Campania — ci ha fatto sentire come se le appartenessimo."
+    },
+    "destinations": {
+        "script": "Esplora",
+        "subtitle": "DESTINAZIONI",
+        "title": "Scopri i Tesori Nascosti\ndella Campania",
+        "items": {
+            "castellabate": {
+                "title": "Castellabate",
+                "subtitle": "Borgo Medievale",
+                "area": "Patrimonio",
+                "unit": "UNESCO",
+                "desc": "Passeggia tra strette strade di pietra, ammira viste panoramiche sul Mediterraneo e vivi l'autentica vita di paese in questo gioiello medievale."
+            },
+            "marina": {
+                "title": "Marina di Camerota",
+                "subtitle": "Paradiso Costiero",
+                "area": "30+",
+                "unit": "Cale Nascoste",
+                "desc": "Acque turchesi e cristalline, incredibili grotte marine e spiagge incontaminate ne fanno il fiore all'occhiello della costa cilentana."
+            },
+            "paestum": {
+                "title": "Templi di Paestum",
+                "subtitle": "Antiche Rovine Greche",
+                "area": "2.500",
+                "unit": "Anni di Storia",
+                "desc": "Resta senza fiato davanti a tre dei templi greci meglio conservati al mondo, circondati da bellezza senza tempo."
+            },
+            "amalfi": {
+                "title": "Costiera Amalfitana",
+                "subtitle": "Bellezza Costiera",
+                "area": "50km",
+                "unit": "Itinerario Panoramico",
+                "desc": "Murales drammatici, villaggi colorati arroccati sulle colline e la leggendaria bellezza della costa più famosa d'Italia."
+            }
+        }
+    },
+    "dayTours": {
+        "script": "Escursioni",
+        "subtitle": "AVVENTURE IN GIORNATA",
+        "title": "Esplora il Cilento\nin un Giorno",
+        "intro": "Ideali per chi ha poco tempo o come integrazione al tuo soggiorno. Ogni escursione è curata per massimizzare la tua esperienza.",
+        "items": {
+            "paestum": {
+                "name": "Paestum: Templi e Museo",
+                "duration": "6 ore",
+                "price": "Da €89",
+                "desc": "Passeggia tra gli antichi templi greci ed esplora il suggestivo museo archeologico."
+            },
+            "amalfi": {
+                "name": "Tour della Costiera Amalfitana",
+                "duration": "8 ore",
+                "price": "Da €149",
+                "desc": "Vivi la bellezza drammatica ed emozionante del tratto di costa più famoso al mondo."
+            },
+            "ebike": {
+                "name": "Tour in E-Bike tra le Vigne",
+                "duration": "5 ore",
+                "price": "Da €115",
+                "desc": "Pedala attraverso morbide colline fino a cantine esclusive per una degustazione enogastronomica."
+            }
+        }
+    },
+    "about": {
+        "script": "Incontra Teresa",
+        "subtitle": "LA TUA ESPERTA",
+        "title": "Il Cuore Dietro\nal Tuo Viaggio",
+        "intro": "Da oltre 20 anni, Teresa condivide il suo amato Cilento con viaggiatori da tutto il mondo. Le sue radici, la conoscenza del territorio e la passione autentica creano esperienze che trasformano i visitatori in parte della famiglia.",
+        "timeline": {
+            "2004": "Fondazione Paestum Holidays",
+            "2010": "Organizzato il primo viaggio delle Radici",
+            "2015": "Espansione a tutta la regione Campania",
+            "2020": "Cinquecentesimo viaggiatore felice",
+            "2024": "Lancio del brand FELIX DREAM"
+        },
+        "tabs": {
+            "story": {
+                "name": "Costruire una Storia",
+                "title": "Nata e cresciuta nel Cilento",
+                "desc": "Teresa è cresciuta tra gli uliveti e i vigneti del Cilento. La sua infanzia ritmata dai profumi della cucina della nonna, dai racconti degli anziani e dall'antico ritmo del Mediterraneo.",
+                "highlight": "Ogni viaggio è creato su misura — perché il Cilento per me non è solo lavoro, è dove abita il mio cuore."
+            },
+            "philosophy": {
+                "name": "Filosofia",
+                "title": "Un Viaggio che Trasforma",
+                "desc": "Teresa crede che le migliori esperienze derivino dai veri legami umani. Combina un'ineguagliabile conoscenza locale all'intuito di capire sempre i bisogni e i desideri del turista.",
+                "highlight": "Non pianifico semplici itinerari — creo viaggi che toccano l'anima."
+            },
+            "expertise": {
+                "name": "La Nostra Esperienza",
+                "title": "20+ Anni di Conoscenza",
+                "desc": "Fluente in quattro lingue, Teresa ha costruito profondi legami nel tempo con produttori locali, artigiani e famiglie dell'intera Campania. E' questa rete inestimabile capace di aprire porte altrimenti inaccessibili.",
+                "highlight": "Le mie conoscenze sono per voi l’accesso a un’Italia che non ha paragoni."
+            }
+        },
+        "hours": "Disponibile 7 giorni su 7",
+        "hoursLabel": "Disponibilità",
+        "cta": "Incontra Teresa",
+        "years": "Anni",
+        "quote": "La conscenza enciclopedica di Teresa va di pari passo solo con il suo calore umano. Ha reso questo un viaggio di un livello irripetibile."
+    },
+    "stories": {
+        "script": "Storie",
+        "subtitle": "ISPIRAZIONI DI VIAGGIO",
+        "title": "Racconti del\nCilento",
+        "viewAll": "Tutte le Storie",
+        "readMore": "Leggi di Più →",
+        "articles": {
+            "wine": {
+                "title": "L'Arte del Vino in Cilento",
+                "desc": "Scopri antiche e radicate tradizioni nel produrre il vino partendo dai vigneti indigeni fino ai grandi marchi e le cantine private di paese.",
+                "category": "Dolcezze del Palato"
+            },
+            "hiking": {
+                "title": "I Sentieri Segreti del Parco del Cilento",
+                "desc": "Avventurati e scopri un mondo pieno di verdi montagne a picco su baie incontaminate, nel Parco Nazionale d'Europa.",
+                "category": "Natura Sport e Piacere"
+            },
+            "roots": {
+                "title": "Torna alle tue radici e senti riaffiorare i sentimaenti",
+                "desc": "Immergiti nella storia della tua famiglia grazie al viaggio tra i borghi e la ricerca genealogica negli atti di nasita, e goditi le bellezze incredibili dei parenti lontani incontrati.",
+                "category": "Risveglia la tua Mente"
+            },
+            "mozzarella": {
+                "title": "Il Sentiero della Mozzarella",
+                "desc": "Vivi da molto vicino uno dei processi antichi di arte casearia più iconici dell'italia partendo dalle fattore ai tuoi piatti.",
+                "category": "Cibo & Cucina"
+            }
+        },
+        "testimonials": {
+            "script": "Testimonianze",
+            "subtitle": "STORIE DEI VIAGGIATORI",
+            "title": "Parola ai\nNostri Ospiti",
+            "1": "La calorosità con la quale ha saputo interpretare la nostra vacanza resterà impressa a lungo tra i nostri ricordi.",
+            "2": "Non credevo di provare tanti e tali emozioni passeggiando tra i borghi con la signora Teresa.",
+            "3": "L'ospitalità, l’amicizia che scaturisce ad incontrare una famiglia tipica rimarranno un fiore nelle nostre memorie."
+        },
+        "story": {
+            "script": "La Nostra Storia",
+            "subtitle": "IL VIAGGIO",
+            "title": "Venti Anni\ndi Memorie",
+            "p1": "Condividendo e credendo sempre nelle bellezze inestimabili della mia terra ho trasformato ciò che credevo possibile nei sogni che regaliamo oggi su vasta scala. Ogni viaggio ha in se i sentimenti puri dei primi tempi in cui nacque tutto questo.",
+            "p2": "Ho visto sorrisi gioiosi illuminare gli occhi di chi a volte incredulo esplora questi incredibili angoli autentici a due passi dalle spiagge affollate per far apprezzare i calori veri d'Italia in giro per i continenti.",
+            "quote": "Non esistono grandi scoperte se limitate a conoscere meglio posti nuovi – esistono per i cuori nuovi che sono capaci d’imparare in quei luoghi."
+        }
+    },
+    "contact": {
+        "script": "Contatti",
+        "subtitle": "INIZIA IL TUO VIAGGIO",
+        "title": "Pianifichiamo il Tuo\nViaggio Perfetto",
+        "intro": "Ogni viaggio indimenticabile inizia con una chiacchierata. Racconta quello che pensi e facciamo germogliare ricordi da coltivare insieme.",
+        "infoTitle": "Informazioni",
+        "info": {
+            "location": "Indirizzo",
+            "whatsapp": "Chat veloce su WhatsApp ",
+            "whatsappSub": "Operativi in modo Continuo Tutto il giorno",
+            "email": "Per le Mail ",
+            "emailSub": "Rispondiamo tra le 0-24 h",
+            "languages": "Padroneggiamo:",
+            "languagesSub": "Italiano compreso"
+        },
+        "form": {
+            "nameLabel": "Nome Completo",
+            "namePlaceholder": "Mio nome",
+            "emailLabel": "Spazio Email ",
+            "emailPlaceholder": "example@miaemail.it",
+            "phoneLabel": "Telefono (opzionale ma utile) ",
+            "phonePlaceholder": "Digita quì il numero..",
+            "dateLabel": "Preferisci un Periodo ?",
+            "guestsLabel": "In quanti Siete?",
+            "messageLabel": "Non trattenerti! Racconta senza paura e a cuore aperto...",
+            "messagePlaceholder": "Per quanto desideri non saremo mai capaci di leggerlo e apprezarne i contenuti!",
+            "submit": "Vai Con L'invio! →",
+            "submitting": "Attendi, Caricamento Lavori in corso in elaborazione rete...",
+            "success": "Apposto! Si aspetta per il sole 1gg !",
+            "error": "Mmm ops sembra ci è stato un intoppo!",
+            "privacy": "Privacy per prima cosa non divulghiano nulla ed e rispettato tutto come prassi"
+        }
+    },
+    "footer": {
+        "desc": "Con il cuore da più di 20 nel gestire esperienze di pregio lungo un favoloso territorio",
+        "groups": {
+            "discover": "Partiamo",
+            "services": "Noi facciamo Questo",
+            "connect": "Sentiti a casa quì! ",
+            "legal": "Legge"
+        },
+        "newsletter": {
+            "label": "Tutto le News?",
+            "placeholder": "Lascia Email quì",
+            "button": "Fatto Ci sentiamo presto.",
+            "success": "Accipicchia! Benvenuto con affetto nella ns Community",
+            "error": "Accidenti .. si verifica un intpppo .. ritenta!"
+        },
+        "backToTop": "Mettiti in Cima "
+    },
+    "common": {
+        "months": {
+            "jan": "Gennaio",
+            "feb": "Febbraio",
+            "nov": "Novembre",
+            "dec": "Dicembre"
+        }
+    }
+}

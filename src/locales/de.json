@@ -1,0 +1,284 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "experiences": "Erlebnisse",
+        "foodWine": "Wein & Kulinarik",
+        "culturalTours": "Kulturelle Touren",
+        "rootsHolidays": "Ahnenreisen",
+        "dayTours": "Tagesausflüge",
+        "about": "Über Uns",
+        "stories": "Geschichten",
+        "contact": "Kontakt",
+        "bookNow": "Jetzt Buchen"
+    },
+    "hero": {
+        "script": "La dolce vita del Cilento",
+        "title": "Das Cilento, das Sie\nnoch nie gesehen haben",
+        "cta": "Erlebnisse Entdecken",
+        "stats": {
+            "years": "Jahre Erfahrung",
+            "travelers": "Glückliche Reisende",
+            "languages": "Gesprochene Sprachen",
+            "rating": "Google-Bewertung"
+        },
+        "decorative": "KURATIERTE REISEN"
+    },
+    "experiences": {
+        "script": "Empfohlene Erlebnisse",
+        "subtitle": "PERSONALISIERTE REISEN",
+        "title": "Entdecken Sie Ihr perfektes\nCilento-Erlebnis",
+        "items": {
+            "foodWine": {
+                "name": "Das Med(eat)errane",
+                "subtitle": "Kulinarische Reise",
+                "duration": "5 Tage",
+                "desc": "Sonnengereifte Tomaten, handgezogener Mozzarella, historische Weinberge und Sonnenuntergänge über dem Mittelmeer. Eine kulinarische Reise durch die authentischen Aromen des Cilento.",
+                "notes": "Erlebnisse direkt auf dem Bauernhof mit lokalen Produzenten",
+                "alcohol": "Weinverkostungen in 3 Boutique-Weingütern",
+                "temp": "Kochkurse mit italienischen Großmüttern (Nonnas)",
+                "aging": "Ab 890 € pro Person"
+            },
+            "cultural": {
+                "name": "Kulturschatz-Entdecker",
+                "subtitle": "Kulturelles Eintauchen",
+                "duration": "7 Tage",
+                "desc": "Spazieren Sie durch antike griechische Tempel in Paestum, erkunden Sie mittelalterliche Bergdörfer und entdecken Sie die reiche Geschichte, die das Cilento einzigartig macht.",
+                "notes": "Private geführte Touren zu archäologischen Stätten",
+                "alcohol": "UNESCO-Weltkulturerbe Erlebnisse",
+                "temp": "Lokale Handwerkskunst-Workshops",
+                "aging": "Ab 1.290 € pro Person"
+            },
+            "roots": {
+                "name": "Die Reise zu den Wurzeln",
+                "subtitle": "Ahnenforschung",
+                "duration": "10 Tage",
+                "desc": "Finden Sie die Wurzeln Ihrer italienischen Herkunft. Laufen Sie durch die Straßen Ihrer Vorfahren, treffen Sie entfernte Verwandte und entdecken Sie das Dorf Ihrer Familie.",
+                "notes": "Hilfe bei Ahnenforschung",
+                "alcohol": "Dorfbesuche und Zusammenkünfte mit Verwandten",
+                "temp": "Services zur Urkunden- und Dokumentensuche",
+                "aging": "Ab 2.500 € pro Person"
+            }
+        },
+        "features": {
+            "expertise": {
+                "title": "Lokale Expertise",
+                "desc": "Über 20 Jahre vertraut mit dem Verborgenen und den Erlebnissen tief im Cilento."
+            },
+            "personal": {
+                "title": "Die persönliche Note",
+                "desc": "Jede Reise wird von Teresa nach den Interessen und dem Rhythmus des Kunden speziell zusammengestellt."
+            },
+            "flexible": {
+                "title": "Flexibles Reisetempo",
+                "desc": "Keine überfüllten, hektischen Touren. Wir haben Zeit, Momente aufzusaugen und sich mit Menschen tief verbunden."
+            },
+            "authentic": {
+                "title": "Wahrer Zugang",
+                "desc": "Außergewöhnliche Geheimtipps. Vom gemütlichen Familienhof zur Weinverkostung in Weingütern jenseits jedes Massentourismus."
+            }
+        },
+        "quote": "Teresa hat nicht nur uns die Region gebracht – sie schuf uns ein starkes lokales Erlebnis und Verbundenheit."
+    },
+    "destinations": {
+        "script": "Entdecken",
+        "subtitle": "REISEZIELE",
+        "title": "Erleben Sie Kampaniens\nverborgene Schätze",
+        "items": {
+            "castellabate": {
+                "title": "Castellabate",
+                "subtitle": "Mittelalterliches Bergdorf",
+                "area": "UNESCO",
+                "unit": "Weltkulturerbe",
+                "desc": "Ein Labyrinth aus Kopfsteinpflastergassen, traumhaften Küstenpanoramen des tiefblauen Mittelmeers, echtes Lebensgefühl unter Menschen."
+            },
+            "marina": {
+                "title": "Marina di Camerota",
+                "subtitle": "Traumküste",
+                "area": "30+",
+                "unit": "Versteckte Buchten",
+                "desc": "Weiße unberührte Klippen gepaart mit den klaren und ruhigen Farben in tiefe Felsschluchten geben den Ton an."
+            },
+            "paestum": {
+                "title": "Tempelanlagen von Paestum",
+                "subtitle": "Die antiken griechischen Ruinen",
+                "area": "2.500",
+                "unit": "Jahre alte Geschichte",
+                "desc": "Staunen Sie fassungslos vor massiven Säulenhallen von drei sehr selten und so unbeschadet erhaltenen großen Tempeln."
+            },
+            "amalfi": {
+                "title": "Die Amalfiküste",
+                "subtitle": "Schönheiten Europas",
+                "area": "50km",
+                "unit": "Panoramarouten",
+                "desc": "Bunte Architektur in spektakulären und einzigartigen Steinhängen und Panoramastrassen in Europa auf ganz spezielle Art genossen."
+            }
+        }
+    },
+    "dayTours": {
+        "script": "Tagesausflüge",
+        "subtitle": "EIN-TAGES-ABENTEUER",
+        "title": "Das Cilento\nan einem Tag",
+        "intro": "Ideal, um einen freien Tag flexibel im Urlaub unterzubringen. Hoch emotional vorbereitet für ihre tiefste Entspannung.",
+        "items": {
+            "paestum": {
+                "name": "Paestum Antike und Einblicke",
+                "duration": "6 Stunden",
+                "price": "Ab 89 €",
+                "desc": "Schlendern Sie unter antiken Einflüssen bis Sie sich der Welt der alten Ausgrabungen vertiefen."
+            },
+            "amalfi": {
+                "name": "Die Amalfiküste-Tour",
+                "duration": "8 Stunden",
+                "price": "Ab 149 €",
+                "desc": "Erleben Sie pure Faszination in einem farbenprächtigen Naturweltwunder an Europas beeindruckendsten Steilhängen."
+            },
+            "ebike": {
+                "name": "E-Bike Weingut Erkundungsfahrt",
+                "duration": "5 Stunden",
+                "price": "Ab 115 €",
+                "desc": "Gepaart von purer Energie und sanften Erhebungen zu exklusiven lokalen Genüssen im Herzen von der Rebe zur Flasche für den Gaumen."
+            }
+        }
+    },
+    "about": {
+        "script": "Teresa kennenlernen",
+        "subtitle": "IHRE REISE-EXPERTIN",
+        "title": "Das Herz\nIhrer Erfahrung",
+        "intro": "Von Kindertagen ist die Begeisterung in der Schönheit dieser Landschaft spürbar. Eine enge Freundin welche Sie mit ihrer Liebe zur Region anstecken wird.",
+        "timeline": {
+            "2004": "Paestum Holidays wird gegründet",
+            "2010": "Organisierte Ahnenforschung",
+            "2015": "Touren über das gesamte Gebiet",
+            "2020": "Dankbarkeit für viele glückliche Gäste",
+            "2024": "Die Zukunft mit der Marke FELIX DREAM"
+        },
+        "tabs": {
+            "story": {
+                "name": "Die Erfolgsgeschichte",
+                "title": "Ein Kind der Sonne",
+                "desc": "Auf großen Olivenbäumen hat Teresa den Grundschatz ihres glücklichen Gemüts geprägt geprägt vom Großmutters Küche im warmen Takt.",
+                "highlight": "Der Grund allen Erfolges ist es alles persönlich zu bewerten — eine Arbeit die Liebe ist anzunehmen."
+            },
+            "philosophy": {
+                "name": "Die Lebensphilosophie",
+                "title": "Das Innere einer starken Bindung",
+                "desc": "Kein guter Anklang ist so echt wie der des unverfälschten Umgangs miteinander über lange Wege und Zeit durch ehrliche Menschlichkeit.",
+                "highlight": "Sie werden nichts wie einen simplen Reiserhythmus vorfinden, but eine garantierte Reise zur Entdeckung."
+            },
+            "expertise": {
+                "name": "Fachgebiet",
+                "title": "20+ Jahre vertraut in das Innerste!",
+                "desc": "Teresa bringt tiefgehenden Reichtum an Sprachkenntnissen. Viele enge Bindungen verknüpfen sie wie Brücken zu allem verborgenen Orten.",
+                "highlight": "Mit den Netzwerken im Rücken öffnet sie jeden versteckten Ort auf ihrer Erkundungsfahrt."
+            }
+        },
+        "hours": "Wir sind jederzeit von Montag bis Sonntag immer glücklich für sie erreichbar",
+        "hoursLabel": "Tägliche Erreichbarkeit",
+        "cta": "Ein Hallo von Teresa",
+        "years": "Spitzenjahre",
+        "quote": "Nach großen Worten von unserer Seite war klar Teresa brachte Wissen und unfassbaren Herzschlag und Sympathie."
+    },
+    "stories": {
+        "script": "Geschichten",
+        "subtitle": "LASSEN SIE SICH INSPIRIEREN",
+        "title": "Ein Tag\nim Cilento",
+        "viewAll": "Weitere Beiträge ansehen",
+        "readMore": "Jetzt Weiterlesen →",
+        "articles": {
+            "wine": {
+                "title": "Cilentos Kunstwerke beim Trinken",
+                "desc": "Wenn sie glauben der Wein ist einfach Wein haben Sie den Kern vom Rebenzauber noch lange hier nicht erlebt.",
+                "category": "Genuss der Sinne"
+            },
+            "hiking": {
+                "title": "Suchen und Wandern sie den besten Küsten",
+                "desc": "Treten sie vor den Pforten unglaublicher Klippen mit Pfaden durch üppigste Wiesen direkt in einem atemberaubenden europäischen Meerespanorama ein.",
+                "category": "Inspiration für den aktiven Entdecker"
+            },
+            "roots": {
+                "title": "Familiendramen, Entspannung auf Urvätern boden!",
+                "desc": "Tief greifende Einflüsse in echten Wundern verborgen am Ende an Türen klopfend alte Familien und Verbindungen zu erschließen.",
+                "category": "Besinnung des Ursprungs"
+            },
+            "mozzarella": {
+                "title": "Käserouten in Weiß getarnt",
+                "desc": "Nichts verkörpert die Genialität die man mit feinem Teig zu perfekten Tellern formt in seiner Reinkultur wie Büffel und Käsebauer.",
+                "category": "Regionale Besonderheiten"
+            }
+        },
+        "testimonials": {
+            "script": "Empfehlungen",
+            "subtitle": "KUNDEN",
+            "title": "Aus den Mündern\nunserer Urlauber",
+            "1": "Nur wer hier wahr ist fühlt Kampagnan so intensiv als wenn er in echten Farben von all dieser echten Wärme sich getragen ins Unendliche führt.",
+            "2": "Wir wären ohne das tiefe Vertrauen der lokalen Einblicke niemals an unsere engsten Ursprünge gelangt. Es war unglaublich!",
+            "3": "Wir sahen eine unvoreingenommen Frau und wir reisten in Italien noch als wir aus unendlichen großen Vorstellungen uns trafen. Absolute Spitze! Danke!"
+        },
+        "story": {
+            "script": "Der Beginn",
+            "subtitle": "DIE WEGE",
+            "title": "Die schönen und\nwahren Entdeckungen",
+            "p1": "Gepaart von Unbeschwertheiten fing ein Konzept an zu wuchern im Sinne mit Liebe etwas für Gäste zu zaubern, Tag ein Tag aus.",
+            "p2": "Lachen, Freuen, Trauern und Unbeschreibliches Entzücken hat uns allen ein Bild ins Leben gebracht das keine Menschenmassen spiegeln sondern ganz isolierte und pure Lebenskraft aufleben lassen.",
+            "quote": "Unsere neuen unentdeckten eignen Schätze stießen uns empor mit dem neuen Herzen an diesen unbegrenzten Ort!"
+        }
+    },
+    "contact": {
+        "script": "Sind Sie dran",
+        "subtitle": "DER ERSTE SCHRITT",
+        "title": "Wir machen Alles,\nWir reden viel",
+        "intro": "Beschreiben, Fühlen, Erwarten! Nur dies soll Sie im Geiste bewegen, alles am Rest regeln wir hier!",
+        "infoTitle": "Kurz & Klar:",
+        "info": {
+            "location": "Standpunkt",
+            "whatsapp": "Direkter Chat auf WhatsApp!",
+            "whatsappSub": "Für all Fragen bereit ab Tag 1",
+            "email": "Schreiben Sie E-Mails",
+            "emailSub": "Wir lesen oder handeln extrem rasch",
+            "languages": "Die Verständigung:",
+            "languagesSub": "Sehr Gutes Deutsch gesprochen"
+        },
+        "form": {
+            "nameLabel": "Wer sind Sie (Name)?",
+            "namePlaceholder": "Tragen Sie Name ein",
+            "emailLabel": "Ihre E-mail:",
+            "emailPlaceholder": "zB. example@email.de",
+            "phoneLabel": "Optional Nummern:",
+            "phonePlaceholder": "Wir rufen nicht spontan ohne Wissen an!",
+            "dateLabel": "Wann peilen Sie den Urlaub an?",
+            "guestsLabel": "Wieviele Personen kommen?",
+            "messageLabel": "Die großen Wünsche / Träume:",
+            "messagePlaceholder": "Lassen Sie ihren klaren Gedanken freien Lauf.",
+            "submit": "Druck und Ab die Post! →",
+            "submitting": "Gerade gesendet bitte warten...",
+            "success": "Spitze Geschafft!! Teresa meldet sich entspannt bei Euch! - DANKE !",
+            "error": "Es schlug was nicht richtig durch leider - bitte warten und direkten Mail versuch auf Email starten.",
+            "privacy": "Wir behandeln all diese privaten Sachen hoch strikt nach DSGVO Rechten sicher!"
+        }
+    },
+    "footer": {
+        "desc": "Kuratiert für große Meilensteine. Alles auf Leidenschaftlichen Boden getragen in 2 Dekaden vor Ort.",
+        "groups": {
+            "discover": "Los Geht's",
+            "services": "Wir organisieren das",
+            "connect": "Plaudern Sie",
+            "legal": "Das Recht"
+        },
+        "newsletter": {
+            "label": "Verpassen ist Gestern. (Abo News!)",
+            "placeholder": "Email Adresse hier:",
+            "button": "Anmeldestart",
+            "success": "Fantastisch - Teresa meldet sich Bald!",
+            "error": "Uh, Ein Patzer passiert. nochmal tun bitte..!"
+        },
+        "backToTop": "Flug nach Oben bitte."
+    },
+    "common": {
+        "months": {
+            "jan": "Januar",
+            "feb": "Februar",
+            "nov": "November",
+            "dec": "Dezember"
+        }
+    }
+}

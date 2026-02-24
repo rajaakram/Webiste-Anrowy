@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, ChevronDown, Compass, Home, BookOpen, Newspaper, Users, Mail, Grape } from 'lucide-react';
 import { navigationConfig } from '../config';
+import { LanguageSwitcher } from '../components/LanguageSwitcher';
 
 // Icon lookup map for dynamic icon resolution from config strings
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -42,15 +44,15 @@ export function Navigation() {
     setActiveDropdown(null);
   };
 
+  const { t } = useTranslation();
   const navLinks = navigationConfig.navLinks;
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-wine-800/95 backdrop-blur-md py-3'
-          : 'bg-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
+        ? 'bg-wine-800/95 backdrop-blur-md py-3'
+        : 'bg-transparent py-5'
+        }`}
       role="navigation"
       aria-label="Main navigation"
     >
@@ -61,7 +63,7 @@ export function Navigation() {
           className="flex items-center gap-3 group"
           aria-label={navigationConfig.brandName}
         >
-          <Compass className="w-8 h-8 text-gold-500 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" />
+          <img src="/images/felix-dream-logo.png" alt="Felix Dream" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
           <div className="flex flex-col">
             <span className="font-serif text-xl text-white tracking-wide">{navigationConfig.brandName}</span>
             <span className="text-[10px] text-gold-400 tracking-widest uppercase">{navigationConfig.tagline}</span>
@@ -71,66 +73,68 @@ export function Navigation() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center gap-8" role="menubar">
           {navLinks.map((link) => (
-              <div
-                key={link.name}
-                className="relative"
-                onMouseEnter={() => link.dropdown && setActiveDropdown(link.name)}
-                onMouseLeave={() => setActiveDropdown(null)}
-                role="none"
+            <div
+              key={link.name}
+              className="relative"
+              onMouseEnter={() => link.dropdown && setActiveDropdown(link.name)}
+              onMouseLeave={() => setActiveDropdown(null)}
+              role="none"
+            >
+              <button
+                onClick={() => !link.dropdown && scrollToSection(link.href)}
+                className="flex items-center gap-1 text-sm text-white/80 hover:text-gold-400 transition-colors duration-300 py-2"
+                role="menuitem"
+                aria-haspopup={link.dropdown ? 'true' : undefined}
+                aria-expanded={link.dropdown ? activeDropdown === link.name : undefined}
               >
-                <button
-                  onClick={() => !link.dropdown && scrollToSection(link.href)}
-                  className="flex items-center gap-1 text-sm text-white/80 hover:text-gold-400 transition-colors duration-300 py-2"
-                  role="menuitem"
-                  aria-haspopup={link.dropdown ? 'true' : undefined}
-                  aria-expanded={link.dropdown ? activeDropdown === link.name : undefined}
-                >
-                  {link.name}
-                  {link.dropdown && (
-                    <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${
-                      activeDropdown === link.name ? 'rotate-180' : ''
-                    }`} aria-hidden="true" />
-                  )}
-                </button>
-
-                {/* Dropdown Menu */}
+                {t(link.name)}
                 {link.dropdown && (
-                  <div
-                    className={`absolute top-full left-0 pt-2 transition-all duration-300 ${
-                      activeDropdown === link.name
-                        ? 'opacity-100 visible translate-y-0'
-                        : 'opacity-0 invisible -translate-y-2'
-                    }`}
-                    role="menu"
-                  >
-                    <div className="bg-wine-800/95 backdrop-blur-md rounded-md overflow-hidden min-w-[180px] border border-white/10">
-                      {link.dropdown.map((item) => (
-                        <button
-                          key={item.name}
-                          onClick={() => scrollToSection(item.href)}
-                          className="block w-full text-left px-4 py-3 text-sm text-white/80 hover:bg-gold-500/20 hover:text-gold-400 transition-colors"
-                          role="menuitem"
-                        >
-                          {item.name}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''
+                    }`} aria-hidden="true" />
                 )}
-              </div>
+              </button>
+
+              {/* Dropdown Menu */}
+              {link.dropdown && (
+                <div
+                  className={`absolute top-full left-0 pt-2 transition-all duration-300 ${activeDropdown === link.name
+                    ? 'opacity-100 visible translate-y-0'
+                    : 'opacity-0 invisible -translate-y-2'
+                    }`}
+                  role="menu"
+                >
+                  <div className="bg-wine-800/95 backdrop-blur-md rounded-md overflow-hidden min-w-[180px] border border-white/10">
+                    {link.dropdown.map((item) => (
+                      <button
+                        key={item.name}
+                        onClick={() => scrollToSection(item.href)}
+                        className="block w-full text-left px-4 py-3 text-sm text-white/80 hover:bg-gold-500/20 hover:text-gold-400 transition-colors"
+                        role="menuitem"
+                      >
+                        {t(item.name)}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
-        {/* CTA Button */}
-        {navigationConfig.ctaButtonText && (
-          <button
-            onClick={() => scrollToSection('#contact')}
-            className="hidden lg:block btn-primary rounded"
-            aria-label={navigationConfig.ctaButtonText}
-          >
-            {navigationConfig.ctaButtonText}
-          </button>
-        )}
+        <div className="hidden lg:flex items-center gap-6">
+          <LanguageSwitcher />
+
+          {/* CTA Button */}
+          {navigationConfig.ctaButtonText && (
+            <button
+              onClick={() => scrollToSection('#contact')}
+              className="btn-primary rounded"
+              aria-label={t(navigationConfig.ctaButtonText)}
+            >
+              {t(navigationConfig.ctaButtonText)}
+            </button>
+          )}
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -149,11 +153,10 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-[72px] bg-wine-900/98 backdrop-blur-lg transition-all duration-500 ${
-          isMobileMenuOpen
-            ? 'opacity-100 visible'
-            : 'opacity-0 invisible pointer-events-none'
-        }`}
+        className={`lg:hidden fixed inset-0 top-[72px] bg-wine-900/98 backdrop-blur-lg transition-all duration-500 ${isMobileMenuOpen
+          ? 'opacity-100 visible'
+          : 'opacity-0 invisible pointer-events-none'
+          }`}
         role="menu"
         aria-hidden={!isMobileMenuOpen}
       >
@@ -176,16 +179,14 @@ export function Navigation() {
                     >
                       <span className="flex items-center gap-3">
                         {IconComponent && <IconComponent className="w-5 h-5 text-gold-500" />}
-                        {link.name}
+                        {t(link.name)}
                       </span>
-                      <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${
-                        activeDropdown === link.name ? 'rotate-180' : ''
-                      }`} aria-hidden="true" />
+                      <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${activeDropdown === link.name ? 'rotate-180' : ''
+                        }`} aria-hidden="true" />
                     </button>
                     <div
-                      className={`overflow-hidden transition-all duration-500 ${
-                        activeDropdown === link.name ? 'max-h-40' : 'max-h-0'
-                      }`}
+                      className={`overflow-hidden transition-all duration-500 ${activeDropdown === link.name ? 'max-h-40' : 'max-h-0'
+                        }`}
                       role="menu"
                     >
                       {link.dropdown.map((item) => (
@@ -195,7 +196,7 @@ export function Navigation() {
                           className="block w-full text-left pl-12 py-3 text-white/70 hover:text-gold-400"
                           role="menuitem"
                         >
-                          {item.name}
+                          {t(item.name)}
                         </button>
                       ))}
                     </div>
@@ -207,20 +208,24 @@ export function Navigation() {
                     role="menuitem"
                   >
                     {IconComponent && <IconComponent className="w-5 h-5 text-gold-500" />}
-                    {link.name}
+                    {t(link.name)}
                   </button>
                 )}
               </div>
             );
           })}
 
+          <div className="border-b border-white/10 py-4 mb-2">
+            <LanguageSwitcher />
+          </div>
+
           {navigationConfig.ctaButtonText && (
             <button
               onClick={() => scrollToSection('#contact')}
-              className="btn-primary rounded mt-6 text-center"
+              className="btn-primary rounded mt-4 text-center"
               role="menuitem"
             >
-              {navigationConfig.ctaButtonText}
+              {t(navigationConfig.ctaButtonText)}
             </button>
           )}
         </div>
