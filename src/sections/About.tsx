@@ -79,8 +79,8 @@ export function About() {
                       onClick={() => setActiveTab(tab.id)}
                       aria-pressed={activeTab === tab.id}
                       className={`flex items-center gap-2 px-4 py-2.5 rounded-sm text-sm transition-all duration-300 ${activeTab === tab.id
-                          ? 'bg-gold-500 text-white'
-                          : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                        ? 'bg-gold-500 text-white'
+                        : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
                         }`}
                     >
                       {IconComponent && <IconComponent className="w-4 h-4" />}
@@ -121,7 +121,7 @@ export function About() {
                   <div className="flex justify-between overflow-x-auto gap-2">
                     {aboutConfig.timeline.map((event) => (
                       <div key={event.year} className="relative flex flex-col items-center flex-shrink-0 min-w-[70px]">
-                        <div className="w-2.5 h-2.5 rounded-full bg-[#141414] border-2 border-gold-500 z-10" />
+                        <div className="w-2.5 h-2.5 rounded-full bg-[#1C1A18] border-2 border-gold-500 z-10" />
                         <span className="font-serif text-sm text-gold-500 mt-2">{event.year}</span>
                         <span className="text-[11px] text-white/60 mt-0.5 text-center whitespace-nowrap">{t(`about.timeline.${event.year}`)}</span>
                       </div>
@@ -170,8 +170,8 @@ export function About() {
                 <div
                   key={tab.id}
                   className={`absolute inset-0 transition-all duration-500 ${activeTab === tab.id
-                      ? 'opacity-100 scale-100'
-                      : 'opacity-0 scale-105'
+                    ? 'opacity-100 scale-100'
+                    : 'opacity-0 scale-105'
                     }`}
                 >
                   <img

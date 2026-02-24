@@ -22,7 +22,7 @@ function App() {
     <>
       {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
 
-      <div className={`min-h-screen bg-[#141414] ${isLoading ? 'overflow-hidden max-h-screen' : ''}`}>
+      <div className={`min-h-screen bg-[#1C1A18] ${isLoading ? 'overflow-hidden max-h-screen' : ''}`}>
         <Navigation />
 
         <main>

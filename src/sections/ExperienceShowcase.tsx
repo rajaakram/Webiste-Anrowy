@@ -47,7 +47,7 @@ export function ExperienceShowcase() {
     <section
       id="experiences"
       ref={sectionRef}
-      className="section-padding relative overflow-hidden"
+      className="pb-[4rem] md:pb-[7.5rem] pt-12 md:pt-20 relative overflow-hidden"
     >
       {/* Subtle Texture Overlay */}
       <div className="absolute inset-0 opacity-5">
@@ -74,8 +74,8 @@ export function ExperienceShowcase() {
               key={exp.id}
               onClick={() => setActiveExperience(i)}
               className={`px-6 py-3 rounded-sm text-sm transition-all duration-300 ${i === activeExperience
-                  ? 'bg-gold-500 text-white'
-                  : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                ? 'bg-gold-500 text-white'
+                : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
                 }`}
             >
               {t(`experiences.items.${exp.id === 'food-wine' ? 'foodWine' : exp.id}.name`)}
@@ -152,10 +152,10 @@ export function ExperienceShowcase() {
                   loading={i === 0 ? undefined : 'lazy'}
                   style={exp.filter ? { filter: exp.filter } : undefined}
                   className={`absolute inset-0 w-full h-full object-cover rounded-lg z-10 drop-shadow-2xl transition-all duration-700 ${i === activeExperience
-                      ? 'opacity-100 scale-100 translate-y-0'
-                      : i < activeExperience
-                        ? 'opacity-0 scale-90 -translate-y-6 pointer-events-none'
-                        : 'opacity-0 scale-90 translate-y-6 pointer-events-none'
+                    ? 'opacity-100 scale-100 translate-y-0'
+                    : i < activeExperience
+                      ? 'opacity-0 scale-90 -translate-y-6 pointer-events-none'
+                      : 'opacity-0 scale-90 translate-y-6 pointer-events-none'
                     }`}
                 />
               ))}

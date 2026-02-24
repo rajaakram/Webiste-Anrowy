@@ -109,16 +109,19 @@ export function Hero({ isReady }: { isReady: boolean }) {
 
       {/* Stats with count-up */}
       {heroConfig.stats.length > 0 && (
-        <div className={`absolute bottom-20 left-0 right-0 z-10 transition-all duration-1000 ease-out ${phase >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+        <div className={`absolute bottom-10 md:bottom-12 left-0 right-0 z-10 transition-all duration-1000 ease-out ${phase >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <div className="container-custom">
-            <div className="grid gap-8 max-w-3xl mx-auto" style={{ gridTemplateColumns: `repeat(${heroConfig.stats.length}, minmax(0, 1fr))` }}>
+            <div className="flex items-start justify-center max-w-3xl mx-auto">
               {heroConfig.stats.map((stat, index) => (
-                <div key={index} className={`text-center ${index > 0 && index < heroConfig.stats.length ? 'border-l border-white/20' : ''}`}>
-                  <div className="font-serif text-3xl md:text-4xl text-gold-500 mb-2 tabular-nums">
-                    {counts[index]}{stat.suffix}
+                <>
+                  {index > 0 && <div key={`sep-${index}`} className="w-px self-stretch bg-white/20 mx-6 flex-shrink-0" />}
+                  <div key={index} className="text-center flex flex-col items-center justify-start flex-1">
+                    <div className="font-serif text-3xl md:text-4xl text-gold-500 mb-2 tabular-nums">
+                      {counts[index]}{stat.suffix}
+                    </div>
+                    <div className="text-xs md:text-sm text-white/70 uppercase tracking-wider min-h-[2.5em] flex items-center justify-center text-center">{t(`hero.stats.${['years', 'travelers', 'languages', 'rating'][index]}`)}</div>
                   </div>
-                  <div className="text-xs md:text-sm text-white/70 uppercase tracking-wider">{t(`hero.stats.${['years', 'travelers', 'languages', 'rating'][index]}`)}</div>
-                </div>
+                </>
               ))}
             </div>
           </div>
@@ -126,7 +129,7 @@ export function Hero({ isReady }: { isReady: boolean }) {
       )}
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#141414] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#1C1A18] to-transparent" />
 
       {/* Side decorative */}
       {heroConfig.decorativeText && (
