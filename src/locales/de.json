@@ -66,7 +66,7 @@
             },
             "personal": {
                 "title": "Die persönliche Note",
-                "desc": "Jede Reise wird von Teresa nach den Interessen und dem Rhythmus des Kunden speziell zusammengestellt."
+                "desc": "Jede Reise wird von unserem Team nach den Interessen und dem Rhythmus des Kunden speziell zusammengestellt."
             },
             "flexible": {
                 "title": "Flexibles Reisetempo",
@@ -77,7 +77,7 @@
                 "desc": "Außergewöhnliche Geheimtipps. Vom gemütlichen Familienhof zur Weinverkostung in Weingütern jenseits jedes Massentourismus."
             }
         },
-        "quote": "Teresa hat nicht nur uns die Region gebracht – sie schuf uns ein starkes lokales Erlebnis und Verbundenheit."
+        "quote": "Das Paestum Holidays Team hat nicht nur uns die Region gebracht – sie schufen uns ein starkes lokales Erlebnis und Verbundenheit."
     },
     "destinations": {
         "script": "Entdecken",
@@ -141,7 +141,7 @@
         }
     },
     "about": {
-        "script": "Teresa kennenlernen",
+        "script": "Unser Team",
         "subtitle": "IHRE REISE-EXPERTIN",
         "title": "Das Herz\nIhrer Erfahrung",
         "intro": "Von Kindertagen ist die Begeisterung in der Schönheit dieser Landschaft spürbar. Eine enge Freundin welche Sie mit ihrer Liebe zur Region anstecken wird.",
@@ -150,13 +150,13 @@
             "2010": "Organisierte Ahnenforschung",
             "2015": "Touren über das gesamte Gebiet",
             "2020": "Dankbarkeit für viele glückliche Gäste",
-            "2024": "Die Zukunft mit der Marke FELIX DREAM"
+            "2024": "Die Zukunft mit der Marke Paestum Holidays"
         },
         "tabs": {
             "story": {
                 "name": "Die Erfolgsgeschichte",
                 "title": "Ein Kind der Sonne",
-                "desc": "Auf großen Olivenbäumen hat Teresa den Grundschatz ihres glücklichen Gemüts geprägt geprägt vom Großmutters Küche im warmen Takt.",
+                "desc": "Unser Team ist zwischen Olivenbäumen und Weinbergen aufgewachsen. Kindheiten geprägt vom Duft von Großmutters Küche im warmen Takt des Mittelmeers.",
                 "highlight": "Der Grund allen Erfolges ist es alles persönlich zu bewerten — eine Arbeit die Liebe ist anzunehmen."
             },
             "philosophy": {
@@ -168,15 +168,15 @@
             "expertise": {
                 "name": "Fachgebiet",
                 "title": "20+ Jahre vertraut in das Innerste!",
-                "desc": "Teresa bringt tiefgehenden Reichtum an Sprachkenntnissen. Viele enge Bindungen verknüpfen sie wie Brücken zu allem verborgenen Orten.",
+                "desc": "Unser Team bringt tiefgehenden Reichtum an Sprachkenntnissen. Viele enge Bindungen verknüpfen sie wie Brücken zu allen verborgenen Orten.",
                 "highlight": "Mit den Netzwerken im Rücken öffnet sie jeden versteckten Ort auf ihrer Erkundungsfahrt."
             }
         },
         "hours": "Wir sind jederzeit von Montag bis Sonntag immer glücklich für sie erreichbar",
         "hoursLabel": "Tägliche Erreichbarkeit",
-        "cta": "Ein Hallo von Teresa",
+        "cta": "Unser Team kennenlernen",
         "years": "Spitzenjahre",
-        "quote": "Nach großen Worten von unserer Seite war klar Teresa brachte Wissen und unfassbaren Herzschlag und Sympathie."
+        "quote": "Das Wissen des Teams ist enzyklopädisch und ihre Wärme und Sympathie machten diese Reise unvergleichlich."
     },
     "stories": {
         "script": "Geschichten",
@@ -251,7 +251,7 @@
             "messagePlaceholder": "Lassen Sie ihren klaren Gedanken freien Lauf.",
             "submit": "Druck und Ab die Post! →",
             "submitting": "Gerade gesendet bitte warten...",
-            "success": "Spitze Geschafft!! Teresa meldet sich entspannt bei Euch! - DANKE !",
+            "success": "Spitze Geschafft!! Unser Team meldet sich entspannt bei Euch! - DANKE !",
             "error": "Es schlug was nicht richtig durch leider - bitte warten und direkten Mail versuch auf Email starten.",
             "privacy": "Wir behandeln all diese privaten Sachen hoch strikt nach DSGVO Rechten sicher!"
         }
@@ -268,7 +268,7 @@
             "label": "Verpassen ist Gestern. (Abo News!)",
             "placeholder": "Email Adresse hier:",
             "button": "Anmeldestart",
-            "success": "Fantastisch - Teresa meldet sich Bald!",
+            "success": "Fantastisch - Unser Team meldet sich bald!",
             "error": "Uh, Ein Patzer passiert. nochmal tun bitte..!"
         },
         "backToTop": "Flug nach Oben bitte."

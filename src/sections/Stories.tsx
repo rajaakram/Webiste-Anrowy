@@ -50,7 +50,7 @@ export function Stories() {
             <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
               {t('stories.subtitle')}
             </span>
-            <h2 className="font-serif text-h1 text-white has-bar whitespace-pre-line">
+            <h2 className="font-serif text-h1 text-[#2C2417] whitespace-pre-line">
               {t('stories.title')}
             </h2>
           </div>
@@ -99,18 +99,18 @@ export function Stories() {
                 {/* Content */}
                 <div>
                   {/* Date */}
-                  <div className="flex items-center gap-2 text-white/60 text-sm mb-3">
+                  <div className="flex items-center gap-2 text-[#6B5D4D] text-sm mb-3">
                     <Calendar className="w-4 h-4" />
                     <span>{item.date}</span>
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-serif text-h5 text-white mb-3 group-hover:text-gold-400 transition-colors">
+                  <h3 className="font-serif text-h5 text-[#2C2417] mb-3 group-hover:text-gold-600 transition-colors">
                     {t(`stories.articles.${articleKeys[index]}.title`)}
                   </h3>
 
                   {/* Excerpt */}
-                  <p className="text-white/70 text-sm leading-relaxed mb-4 line-clamp-3">
+                  <p className="text-[#6B5D4D] text-sm leading-relaxed mb-4 line-clamp-3">
                     {t(`stories.articles.${articleKeys[index]}.desc`)}
                   </p>
 
@@ -135,7 +135,7 @@ export function Stories() {
               <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
                 {t('stories.testimonials.subtitle')}
               </span>
-              <h2 className="font-serif text-h2 text-white whitespace-pre-line">
+              <h2 className="font-serif text-h2 text-[#2C2417] whitespace-pre-line">
                 {t('stories.testimonials.title')}
               </h2>
             </div>
@@ -144,7 +144,7 @@ export function Stories() {
               {storiesConfig.testimonials.map((testimonial, index) => (
                 <div
                   key={testimonial.name}
-                  className="scale-in p-8 bg-white/5 rounded-lg border border-white/10 relative"
+                  className="scale-in p-8 bg-[#EDE6DA] rounded-lg border border-[#D4C9B8] relative"
                   style={{ transitionDelay: `${0.1 + index * 0.1}s` }}
                 >
                   <Quote className="w-8 h-8 text-gold-500/30 absolute top-6 right-6" />
@@ -154,12 +154,12 @@ export function Stories() {
                       <Star key={i} className="w-4 h-4 text-gold-500 fill-gold-500" />
                     ))}
                   </div>
-                  <p className="text-white/80 leading-relaxed mb-6 italic">
+                  <p className="text-[#2C2417]/80 leading-relaxed mb-6 italic">
                     "{t(`stories.testimonials.${index + 1}`)}"
                   </p>
                   <div>
-                    <p className="text-white font-medium text-sm">{testimonial.name}</p>
-                    <p className="text-white/50 text-xs">{testimonial.role}</p>
+                    <p className="text-[#2C2417] font-medium text-sm">{testimonial.name}</p>
+                    <p className="text-[#6B5D4D] text-xs">{testimonial.role}</p>
                   </div>
                 </div>
               ))}
@@ -169,7 +169,7 @@ export function Stories() {
 
         {/* Story Section */}
         {storiesConfig.storyTitle && (
-          <div id="story" className="fade-up mt-24 pt-20 border-t border-white/10" style={{ transitionDelay: '0.1s' }}>
+          <div id="story" className="fade-up mt-24 pt-20 border-t border-[#D4C9B8]" style={{ transitionDelay: '0.1s' }}>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Content */}
               <div className="slide-in-left">
@@ -177,10 +177,10 @@ export function Stories() {
                 <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
                   {t('stories.story.subtitle')}
                 </span>
-                <h2 className="font-serif text-h2 text-white mb-6 whitespace-pre-line">
+                <h2 className="font-serif text-h2 text-[#2C2417] mb-6 whitespace-pre-line">
                   {t('stories.story.title')}
                 </h2>
-                <div className="space-y-4 text-white/75 leading-relaxed">
+                <div className="space-y-4 text-[#2C2417]/75 leading-relaxed">
                   <p>{t('stories.story.p1')}</p>
                   <p>{t('stories.story.p2')}</p>
                 </div>
@@ -189,9 +189,9 @@ export function Stories() {
                 {storiesConfig.storyTimeline.length > 0 && (
                   <div className="mt-8 grid grid-cols-4 gap-4">
                     {storiesConfig.storyTimeline.map((item, index) => (
-                      <div key={index} className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                      <div key={index} className="text-center p-4 bg-[#EDE6DA] rounded-lg border border-[#D4C9B8]">
                         <div className="font-serif text-2xl text-gold-500 mb-1">{item.value}</div>
-                        <div className="text-xs text-white/60">{item.label}</div>
+                        <div className="text-xs text-[#6B5D4D]">{item.label}</div>
                       </div>
                     ))}
                   </div>

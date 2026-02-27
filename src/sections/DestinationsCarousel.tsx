@@ -81,7 +81,7 @@ export function DestinationsCarousel() {
           <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
             {t('destinations.subtitle')}
           </span>
-          <h2 className="font-serif text-h1 text-white whitespace-pre-line">
+          <h2 className="font-serif text-h1 text-[#2C2417] whitespace-pre-line">
             {t('destinations.title')}
           </h2>
         </div>
@@ -148,7 +148,7 @@ export function DestinationsCarousel() {
             </div>
 
             {/* Content Side */}
-            <div className="lg:bg-white/5 lg:border-y lg:border-r lg:border-white/10 lg:rounded-r-lg p-8 lg:p-12 flex flex-col justify-center relative overflow-hidden">
+            <div className="lg:bg-[#EDE6DA] lg:border-y lg:border-r lg:border-[#D4C9B8] lg:rounded-r-lg p-8 lg:p-12 flex flex-col justify-center relative overflow-hidden">
               {slides.map((_, index) => (
                 <div
                   key={index}
@@ -167,10 +167,10 @@ export function DestinationsCarousel() {
                   )}
 
                   {/* Title */}
-                  <h3 className="font-serif text-h3 text-white mb-2">
+                  <h3 className="font-serif text-h3 text-[#2C2417] mb-2">
                     {t(`destinations.items.${slideKeys[index]}.title`)}
                   </h3>
-                  <p className="text-white/70 text-lg mb-6">
+                  <p className="text-[#6B5D4D] text-lg mb-6">
                     {t(`destinations.items.${slideKeys[index]}.subtitle`)}
                   </p>
 
@@ -179,11 +179,11 @@ export function DestinationsCarousel() {
                     <span className="font-serif text-5xl lg:text-6xl text-gold-500">
                       {t(`destinations.items.${slideKeys[index]}.area`)}
                     </span>
-                    <span className="text-white/70 text-lg">{t(`destinations.items.${slideKeys[index]}.unit`)}</span>
+                    <span className="text-[#6B5D4D] text-lg">{t(`destinations.items.${slideKeys[index]}.unit`)}</span>
                   </div>
 
                   {/* Description */}
-                  <p className="text-white/75 leading-relaxed mb-8">
+                  <p className="text-[#2C2417]/75 leading-relaxed mb-8">
                     {t(`destinations.items.${slideKeys[index]}.desc`)}
                   </p>
 
@@ -212,8 +212,8 @@ export function DestinationsCarousel() {
             <span className="font-serif text-2xl text-gold-500">
               {String(currentSlide + 1).padStart(2, '0')}
             </span>
-            <div className="w-12 h-px bg-white/30" />
-            <span className="text-white/60">
+            <div className="w-12 h-px bg-[#D4C9B8]" />
+            <span className="text-[#6B5D4D]">
               {String(slides.length).padStart(2, '0')}
             </span>
           </div>

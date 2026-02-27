@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 48" height="48" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <clipPath id="b1"><path d="M 0.515625 28.574219 L 27.679688 28.574219 L 27.679688 56.414062 L 0.515625 56.414062 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b2"><path d="M 28.25 56.214844 L 53 56.214844 L 53 78.398438 L 28.25 78.398438 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b3"><path d="M 28.445312 31.429688 L 52.890625 31.429688 L 52.890625 55.875 L 28.445312 55.875 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b4"><path d="M 1.605469 67 L 26.730469 67 L 26.730469 75.59375 L 1.605469 75.59375 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b5"><path d="M 1.605469 63 L 26.730469 63 L 26.730469 73 L 1.605469 73 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b6"><path d="M 1.605469 60.65625 L 26.730469 60.65625 L 26.730469 71 L 1.605469 71 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b7"><path d="M 8 64 L 26.730469 64 L 26.730469 69 L 8 69 Z" clip-rule="nonzero"/></clipPath>
+    <clipPath id="b8"><rect x="0" width="54" y="0" height="79"/></clipPath>
+  </defs>
+
+  <!-- Icon graphic mark — scaled to match text block height (~40px) and vertically centered -->
+  <g transform="translate(0, -14) scale(0.56)">
+    <g clip-path="url(#b8)">
+      <g clip-path="url(#b1)">
+        <path fill="#bb0000" d="M 13.953125 56.015625 C 21.382812 56.015625 27.40625 49.988281 27.40625 42.558594 L 27.40625 42.335938 C 27.40625 41.453125 27.320312 40.578125 27.148438 39.710938 C 26.976562 38.84375 26.71875 38.003906 26.382812 37.1875 C 26.042969 36.371094 25.628906 35.597656 25.140625 34.863281 C 24.648438 34.128906 24.089844 33.449219 23.464844 32.824219 C 22.839844 32.199219 22.160156 31.640625 21.425781 31.148438 C 20.691406 30.660156 19.917969 30.246094 19.101562 29.90625 C 18.285156 29.570312 17.445312 29.3125 16.578125 29.140625 C 15.710938 28.96875 14.835938 28.882812 13.953125 28.882812 C 6.523438 28.882812 0.5 34.90625 0.5 42.335938 L 0.5 42.558594 C 0.5 49.992188 6.523438 56.015625 13.953125 56.015625 Z M 5.542969 42.335938 C 5.542969 37.699219 9.316406 33.929688 13.953125 33.929688 C 18.589844 33.929688 22.359375 37.699219 22.359375 42.335938 L 22.359375 42.558594 C 22.359375 47.195312 18.589844 50.96875 13.953125 50.96875 C 9.316406 50.96875 5.542969 47.195312 5.542969 42.558594 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b2)">
+        <path fill="#ffde59" d="M 40.683594 78.25 C 33.898438 78.25 28.398438 72.75 28.398438 65.964844 L 28.398438 53.472656 L 52.96875 53.472656 L 52.96875 65.964844 C 52.96875 72.75 47.46875 78.25 40.683594 78.25 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b3)">
+        <path fill="#00964e" d="M 52.515625 55.308594 L 52.316406 55.308594 C 39.128906 55.308594 28.4375 44.617188 28.4375 31.429688 L 28.636719 31.429688 C 41.824219 31.429688 52.515625 42.121094 52.515625 55.308594 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b4)">
+        <path fill="#0800a8" d="M 26.425781 75.289062 L 1.640625 75.289062 L 1.640625 67.03125 C 9.148438 71.339844 17.550781 71.480469 26.425781 69.4375 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b5)">
+        <path fill="#0800a8" d="M 1.640625 63.460938 C 8.101562 72.070312 26.425781 69.371094 26.425781 69.371094 L 26.425781 70.089844 C 12.117188 75.703125 1.640625 69.183594 1.640625 69.183594 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b6)">
+        <path fill="#0800a8" d="M 1.640625 60.65625 C 1.640625 60.65625 12.597656 71.503906 26.425781 68.59375 L 26.425781 69.371094 C 22.527344 71.214844 8.75 71.242188 1.640625 65.910156 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+      <g clip-path="url(#b7)">
+        <path fill="#0800a8" d="M 8.507812 64.785156 C 12.777344 66.53125 20.84375 66.75 26.425781 64.023438 L 26.425781 68.035156 C 25.574219 68.542969 16.515625 69.851562 8.507812 64.785156 Z" fill-opacity="1" fill-rule="nonzero"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Company name — vertically centered, sized to match icon height -->
+  <text x="38" y="24" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="bold" fill="#2C2417" letter-spacing="2">PAESTUM HOLIDAYS</text>
+  
+  <!-- Tagline — positioned below company name -->
+  <text x="38" y="40" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" fill="#d2a855" letter-spacing="3.5">CURATED TRAVEL EXPERIENCES</text>
+</svg>

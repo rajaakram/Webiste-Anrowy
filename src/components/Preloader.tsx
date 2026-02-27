@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Compass } from 'lucide-react';
 import { preloaderConfig } from '../config';
 
 export function Preloader({ onComplete }: { onComplete: () => void }) {
@@ -22,21 +21,21 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] bg-[#0a0a0a] flex flex-col items-center justify-center transition-opacity duration-600 ${
-        phase === 'fading' ? 'opacity-0' : 'opacity-100'
-      }`}
+      className={`fixed inset-0 z-[9999] bg-[#FDFBF7] flex flex-col items-center justify-center transition-opacity duration-600 ${phase === 'fading' ? 'opacity-0' : 'opacity-100'
+        }`}
     >
       {/* Logo Icon */}
       <div className="preloader-text mb-6">
-        <Compass className="w-12 h-12 text-gold-500" />
+        <span className="text-2xl md:text-3xl font-serif tracking-[0.3em] text-[#2C2417]">
+          {preloaderConfig.brandName}
+        </span>
       </div>
 
-      {/* Brand Name */}
-      <div className="preloader-text text-center" style={{ animationDelay: '0.2s' }}>
-        <h1 className="font-serif text-3xl md:text-4xl text-white tracking-wide mb-2">
-          {preloaderConfig.brandName}
-        </h1>
-        <p className="font-script text-2xl text-gold-400">{preloaderConfig.brandSubname}</p>
+      {/* Subname */}
+      <div className="preloader-text" style={{ animationDelay: '0.3s' }}>
+        <span className="text-xs tracking-[0.4em] uppercase text-[#6B5D4D]">
+          {preloaderConfig.brandSubname}
+        </span>
       </div>
 
       {/* Loading Line */}
@@ -47,7 +46,7 @@ export function Preloader({ onComplete }: { onComplete: () => void }) {
       {/* Year */}
       {preloaderConfig.yearText && (
         <p
-          className="preloader-text mt-4 text-xs text-white/40 uppercase tracking-[0.3em]"
+          className="preloader-text mt-4 text-xs text-[#8A7B6B] uppercase tracking-[0.25em]"
           style={{ animationDelay: '0.4s' }}
         >
           {preloaderConfig.yearText}

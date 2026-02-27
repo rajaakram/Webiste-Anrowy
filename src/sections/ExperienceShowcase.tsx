@@ -64,7 +64,7 @@ export function ExperienceShowcase() {
           <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
             {t('experiences.subtitle')}
           </span>
-          <h2 className="font-serif text-h1 text-white whitespace-pre-line">{t('experiences.title')}</h2>
+          <h2 className="font-serif text-h1 text-[#2C2417] whitespace-pre-line">{t('experiences.title')}</h2>
         </div>
 
         {/* Experience Tabs */}
@@ -75,7 +75,7 @@ export function ExperienceShowcase() {
               onClick={() => setActiveExperience(i)}
               className={`px-6 py-3 rounded-sm text-sm transition-all duration-300 ${i === activeExperience
                 ? 'bg-gold-500 text-white'
-                : 'bg-white/5 text-white/70 hover:bg-white/10 border border-white/10'
+                : 'bg-[#EDE6DA] text-[#6B5D4D] hover:bg-[#D4C9B8] border border-[#D4C9B8]'
                 }`}
             >
               {t(`experiences.items.${exp.id === 'food-wine' ? 'foodWine' : exp.id}.name`)}
@@ -92,7 +92,7 @@ export function ExperienceShowcase() {
               <div className="flex items-baseline gap-4 mb-3">
                 <span className="font-serif text-5xl lg:text-6xl text-gold-500/30 leading-none">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.duration`)}</span>
                 <div>
-                  <h2 className="font-serif text-h3 text-white leading-tight">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.name`)}</h2>
+                  <h2 className="font-serif text-h3 text-[#2C2417] leading-tight">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.name`)}</h2>
                   <span className="font-script text-xl text-gold-400">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.subtitle`)}</span>
                 </div>
               </div>
@@ -100,24 +100,24 @@ export function ExperienceShowcase() {
             </div>
 
             {/* Description */}
-            <p className="text-white/85 leading-relaxed mb-4">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.desc`)}</p>
-            <p className="text-white/65 leading-relaxed text-sm mb-8">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.notes`)}</p>
+            <p className="text-[#2C2417]/85 leading-relaxed mb-4">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.desc`)}</p>
+            <p className="text-[#6B5D4D] leading-relaxed text-sm mb-8">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.notes`)}</p>
 
             {/* Experience Details */}
             <div className="flex gap-6 mb-8">
               <div>
                 <div className="font-serif text-xl text-gold-500">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.alcohol`)}</div>
-                <div className="text-[11px] text-white/50 uppercase tracking-wider mt-1">Highlights</div>
+                <div className="text-[11px] text-[#6B5D4D] uppercase tracking-wider mt-1">Highlights</div>
               </div>
-              <div className="w-px bg-white/10" />
+              <div className="w-px bg-[#D4C9B8]" />
               <div>
                 <div className="font-serif text-xl text-gold-500">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.temp`)}</div>
-                <div className="text-[11px] text-white/50 uppercase tracking-wider mt-1">Experiences</div>
+                <div className="text-[11px] text-[#6B5D4D] uppercase tracking-wider mt-1">Experiences</div>
               </div>
-              <div className="w-px bg-white/10" />
+              <div className="w-px bg-[#D4C9B8]" />
               <div>
                 <div className="font-serif text-xl text-gold-500">{t(`experiences.items.${experience.id === 'food-wine' ? 'foodWine' : experience.id}.aging`)}</div>
-                <div className="text-[11px] text-white/50 uppercase tracking-wider mt-1">Price</div>
+                <div className="text-[11px] text-[#6B5D4D] uppercase tracking-wider mt-1">Price</div>
               </div>
             </div>
 
@@ -169,7 +169,7 @@ export function ExperienceShowcase() {
                 >
                   <ChevronLeft className="w-4 h-4" />
                 </button>
-                <span className="text-sm text-white/50 font-serif tabular-nums whitespace-nowrap">
+                <span className="text-sm text-[#6B5D4D] font-serif tabular-nums whitespace-nowrap">
                   {activeExperience + 1} / {experiences.length}
                 </span>
                 <button
@@ -193,12 +193,12 @@ export function ExperienceShowcase() {
                     key={feature.title}
                     className="flex items-start gap-4 group"
                   >
-                    <div className="w-12 h-12 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-gold-500/30 transition-colors">
+                    <div className="w-12 h-12 rounded-lg bg-[#EDE6DA] border border-[#D4C9B8] flex items-center justify-center flex-shrink-0 group-hover:border-gold-500/30 transition-colors">
                       <IconComponent className="w-5 h-5 text-gold-500" />
                     </div>
                     <div>
-                      <h3 className="font-serif text-lg text-white mb-1">{t(`experiences.features.${feature.icon === 'Wine' ? 'expertise' : feature.icon === 'Thermometer' ? 'personal' : feature.icon === 'Clock' ? 'flexible' : 'authentic'}.title`)}</h3>
-                      <p className="text-sm text-white/65 leading-relaxed">{t(`experiences.features.${feature.icon === 'Wine' ? 'expertise' : feature.icon === 'Thermometer' ? 'personal' : feature.icon === 'Clock' ? 'flexible' : 'authentic'}.desc`)}</p>
+                      <h3 className="font-serif text-lg text-[#2C2417] mb-1">{t(`experiences.features.${feature.icon === 'Wine' ? 'expertise' : feature.icon === 'Thermometer' ? 'personal' : feature.icon === 'Clock' ? 'flexible' : 'authentic'}.title`)}</h3>
+                      <p className="text-sm text-[#6B5D4D] leading-relaxed">{t(`experiences.features.${feature.icon === 'Wine' ? 'expertise' : feature.icon === 'Thermometer' ? 'personal' : feature.icon === 'Clock' ? 'flexible' : 'authentic'}.desc`)}</p>
                     </div>
                   </div>
                 );
@@ -207,9 +207,9 @@ export function ExperienceShowcase() {
 
             {/* Quote */}
             {quote.text && (
-              <div className="mt-10 p-6 bg-white/[0.03] rounded-lg border-l-2 border-gold-500/50">
+              <div className="mt-10 p-6 bg-[#EDE6DA] rounded-lg border-l-2 border-gold-500/50">
                 {quote.prefix && <p className="font-script text-2xl text-gold-400 mb-2">{quote.prefix}</p>}
-                <p className="text-white/70 text-sm italic leading-relaxed">
+                <p className="text-[#6B5D4D] text-sm italic leading-relaxed">
                   "{t('experiences.quote')}"
                 </p>
                 {quote.attribution && <p className="text-gold-500 text-xs mt-3">— {quote.attribution}</p>}

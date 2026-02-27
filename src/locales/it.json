@@ -66,7 +66,7 @@
             },
             "personal": {
                 "title": "Tocco Personale",
-                "desc": "Ogni viaggio è curato personalmente da Teresa in base ai tuoi interessi e ritmi."
+                "desc": "Ogni viaggio è curato personalmente dal nostro team in base ai tuoi interessi e ritmi."
             },
             "flexible": {
                 "title": "Ritmi Flessibili",
@@ -77,7 +77,7 @@
                 "desc": "Accesso privilegiato alle fattorie familiari, vigne private e case locali, lontano dai percorsi turistici affollati."
             }
         },
-        "quote": "Teresa non ci ha solo fatto vedere la Campania — ci ha fatto sentire come se le appartenessimo."
+        "quote": "Il team di Paestum Holidays non ci ha solo fatto vedere la Campania — ci ha fatto sentire come se le appartenessimo."
     },
     "destinations": {
         "script": "Esplora",
@@ -141,42 +141,42 @@
         }
     },
     "about": {
-        "script": "Incontra Teresa",
+        "script": "Il Nostro Team",
         "subtitle": "LA TUA ESPERTA",
         "title": "Il Cuore Dietro\nal Tuo Viaggio",
-        "intro": "Da oltre 20 anni, Teresa condivide il suo amato Cilento con viaggiatori da tutto il mondo. Le sue radici, la conoscenza del territorio e la passione autentica creano esperienze che trasformano i visitatori in parte della famiglia.",
+        "intro": "Da oltre 20 anni, il nostro team condivide l'amato Cilento con viaggiatori da tutto il mondo. Radici profonde, conoscenza del territorio e passione autentica creano esperienze che trasformano i visitatori in parte della famiglia.",
         "timeline": {
             "2004": "Fondazione Paestum Holidays",
             "2010": "Organizzato il primo viaggio delle Radici",
             "2015": "Espansione a tutta la regione Campania",
             "2020": "Cinquecentesimo viaggiatore felice",
-            "2024": "Lancio del brand FELIX DREAM"
+            "2024": "Rilancio del brand Paestum Holidays"
         },
         "tabs": {
             "story": {
                 "name": "Costruire una Storia",
                 "title": "Nata e cresciuta nel Cilento",
-                "desc": "Teresa è cresciuta tra gli uliveti e i vigneti del Cilento. La sua infanzia ritmata dai profumi della cucina della nonna, dai racconti degli anziani e dall'antico ritmo del Mediterraneo.",
+                "desc": "Il nostro team è cresciuto tra gli uliveti e i vigneti del Cilento. Infanzie ritmata dai profumi della cucina delle nonne, dai racconti degli anziani e dall'antico ritmo del Mediterraneo.",
                 "highlight": "Ogni viaggio è creato su misura — perché il Cilento per me non è solo lavoro, è dove abita il mio cuore."
             },
             "philosophy": {
                 "name": "Filosofia",
                 "title": "Un Viaggio che Trasforma",
-                "desc": "Teresa crede che le migliori esperienze derivino dai veri legami umani. Combina un'ineguagliabile conoscenza locale all'intuito di capire sempre i bisogni e i desideri del turista.",
+                "desc": "Crediamo che le migliori esperienze derivino dai veri legami umani. Il nostro approccio combina un'ineguagliabile conoscenza locale all'intuito di capire sempre i bisogni e i desideri del turista.",
                 "highlight": "Non pianifico semplici itinerari — creo viaggi che toccano l'anima."
             },
             "expertise": {
                 "name": "La Nostra Esperienza",
                 "title": "20+ Anni di Conoscenza",
-                "desc": "Fluente in quattro lingue, Teresa ha costruito profondi legami nel tempo con produttori locali, artigiani e famiglie dell'intera Campania. E' questa rete inestimabile capace di aprire porte altrimenti inaccessibili.",
+                "desc": "Fluente in quattro lingue, il nostro team ha costruito profondi legami nel tempo con produttori locali, artigiani e famiglie dell'intera Campania. È questa rete inestimabile capace di aprire porte altrimenti inaccessibili.",
                 "highlight": "Le mie conoscenze sono per voi l’accesso a un’Italia che non ha paragoni."
             }
         },
         "hours": "Disponibile 7 giorni su 7",
         "hoursLabel": "Disponibilità",
-        "cta": "Incontra Teresa",
+        "cta": "Conosci il Team",
         "years": "Anni",
-        "quote": "La conscenza enciclopedica di Teresa va di pari passo solo con il suo calore umano. Ha reso questo un viaggio di un livello irripetibile."
+        "quote": "La conoscenza enciclopedica del team va di pari passo solo con il loro calore umano. Ha reso questo un viaggio di un livello irripetibile."
     },
     "stories": {
         "script": "Storie",
@@ -211,7 +211,7 @@
             "subtitle": "STORIE DEI VIAGGIATORI",
             "title": "Parola ai\nNostri Ospiti",
             "1": "La calorosità con la quale ha saputo interpretare la nostra vacanza resterà impressa a lungo tra i nostri ricordi.",
-            "2": "Non credevo di provare tanti e tali emozioni passeggiando tra i borghi con la signora Teresa.",
+            "2": "Non credevo di provare tanti e tali emozioni passeggiando tra i borghi con il team di Paestum Holidays.",
             "3": "L'ospitalità, l’amicizia che scaturisce ad incontrare una famiglia tipica rimarranno un fiore nelle nostre memorie."
         },
         "story": {

@@ -106,11 +106,11 @@ export function ContactForm() {
           <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
             {t('contact.subtitle')}
           </span>
-          <h2 className="font-serif text-h1 text-white mb-4">
+          <h2 className="font-serif text-h1 text-[#2C2417] mb-4">
             {t('contact.title')}
           </h2>
           {contactFormConfig.introText && (
-            <p className="text-white/70 max-w-2xl mx-auto">
+            <p className="text-[#6B5D4D] max-w-2xl mx-auto">
               {t('contact.intro')}
             </p>
           )}
@@ -121,7 +121,7 @@ export function ContactForm() {
           <div className="lg:col-span-2 space-y-6">
             <div className="slide-in-left" style={{ transitionDelay: '0.1s' }}>
               {contactFormConfig.contactInfoTitle && (
-                <h3 className="font-serif text-h5 text-white mb-6">{t('contact.infoTitle')}</h3>
+                <h3 className="font-serif text-h5 text-[#2C2417] mb-6">{t('contact.infoTitle')}</h3>
               )}
               <div className="space-y-4" role="list" aria-label="Contact information">
                 {contactFormConfig.contactInfo.map((item) => {
@@ -129,16 +129,16 @@ export function ContactForm() {
                   return (
                     <div
                       key={item.label}
-                      className="flex items-start gap-4 p-4 bg-white/5 rounded-lg border border-white/10 hover:border-gold-500/30 transition-colors"
+                      className="flex items-start gap-4 p-4 bg-[#EDE6DA] rounded-lg border border-[#D4C9B8] hover:border-gold-500/30 transition-colors"
                       role="listitem"
                     >
                       <div className="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center flex-shrink-0">
                         {IconComponent && <IconComponent className="w-5 h-5 text-gold-500" />}
                       </div>
                       <div>
-                        <p className="text-xs text-white/60 uppercase tracking-wider mb-1">{t(`contact.info.${item.icon === 'MapPin' ? 'location' : item.icon === 'Phone' ? 'whatsapp' : item.icon === 'Mail' ? 'email' : 'languages'}`)}</p>
-                        <p className="text-white font-medium">{item.value}</p>
-                        <p className="text-sm text-white/60">{t(`contact.info.${item.icon === 'MapPin' ? 'location' : item.icon === 'Phone' ? 'whatsappSub' : item.icon === 'Mail' ? 'emailSub' : 'languagesSub'}`)}</p>
+                        <p className="text-xs text-[#6B5D4D] uppercase tracking-wider mb-1">{t(`contact.info.${item.icon === 'MapPin' ? 'location' : item.icon === 'Phone' ? 'whatsapp' : item.icon === 'Mail' ? 'email' : 'languages'}`)}</p>
+                        <p className="text-[#2C2417] font-medium">{item.value}</p>
+                        <p className="text-sm text-[#6B5D4D]">{t(`contact.info.${item.icon === 'MapPin' ? 'location' : item.icon === 'Phone' ? 'whatsappSub' : item.icon === 'Mail' ? 'emailSub' : 'languagesSub'}`)}</p>
                       </div>
                     </div>
                   );
@@ -149,18 +149,18 @@ export function ContactForm() {
 
           {/* Form */}
           <div className="lg:col-span-3">
-            <div className="slide-in-right bg-white/5 rounded-lg border border-white/10 p-8" style={{ transitionDelay: '0.15s' }}>
+            <div className="slide-in-right bg-[#EDE6DA] rounded-lg border border-[#D4C9B8] p-8" style={{ transitionDelay: '0.15s' }}>
               {status === 'success' ? (
                 <div className="text-center py-12" role="alert">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                  <h3 className="font-serif text-h5 text-white mb-2">
+                  <h3 className="font-serif text-h5 text-[#2C2417] mb-2">
                     {t('contact.form.success')}
                   </h3>
                 </div>
               ) : status === 'error' ? (
                 <div className="text-center py-12" role="alert">
                   <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
-                  <h3 className="font-serif text-h5 text-white mb-2">
+                  <h3 className="font-serif text-h5 text-[#2C2417] mb-2">
                     {t('contact.form.error')}
                   </h3>
                 </div>
@@ -169,7 +169,7 @@ export function ContactForm() {
                   <div className="grid md:grid-cols-2 gap-6">
                     {/* Name */}
                     <div>
-                      <label htmlFor="contact-name" className="block text-sm text-white/80 mb-2">
+                      <label htmlFor="contact-name" className="block text-sm text-[#2C2417]/80 mb-2">
                         {t('contact.form.nameLabel')} <span className="text-gold-500">*</span>
                       </label>
                       <input
@@ -181,13 +181,13 @@ export function ContactForm() {
                         required
                         placeholder={t('contact.form.namePlaceholder')}
                         autoComplete="name"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-gold-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] placeholder-[#A69889] focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
 
                     {/* Phone */}
                     <div>
-                      <label htmlFor="contact-phone" className="block text-sm text-white/80 mb-2">
+                      <label htmlFor="contact-phone" className="block text-sm text-[#2C2417]/80 mb-2">
                         {t('contact.form.phoneLabel')} <span className="text-gold-500">*</span>
                       </label>
                       <input
@@ -199,13 +199,13 @@ export function ContactForm() {
                         required
                         placeholder={t('contact.form.phonePlaceholder')}
                         autoComplete="tel"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-gold-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] placeholder-[#A69889] focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
 
                     {/* Email */}
                     <div>
-                      <label htmlFor="contact-email" className="block text-sm text-white/80 mb-2">
+                      <label htmlFor="contact-email" className="block text-sm text-[#2C2417]/80 mb-2">
                         {t('contact.form.emailLabel')} <span className="text-gold-500">*</span>
                       </label>
                       <input
@@ -217,13 +217,13 @@ export function ContactForm() {
                         required
                         placeholder={t('contact.form.emailPlaceholder')}
                         autoComplete="email"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-gold-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] placeholder-[#A69889] focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
 
                     {/* Visit Date */}
                     <div>
-                      <label htmlFor="contact-date" className="block text-sm text-white/80 mb-2">
+                      <label htmlFor="contact-date" className="block text-sm text-[#2C2417]/80 mb-2">
                         {t('contact.form.dateLabel')} <span className="text-gold-500">*</span>
                       </label>
                       <input
@@ -233,7 +233,7 @@ export function ContactForm() {
                         value={formData.visitDate}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white focus:outline-none focus:border-gold-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] focus:outline-none focus:border-gold-500 transition-colors"
                       />
                     </div>
                   </div>
@@ -241,7 +241,7 @@ export function ContactForm() {
                   {/* Number of Visitors */}
                   {form.visitorsOptions.length > 0 && (
                     <div>
-                      <label htmlFor="contact-visitors" className="block text-sm text-white/80 mb-2">
+                      <label htmlFor="contact-visitors" className="block text-sm text-[#2C2417]/80 mb-2">
                         {t('contact.form.guestsLabel')}
                       </label>
                       <select
@@ -249,10 +249,10 @@ export function ContactForm() {
                         name="visitors"
                         value={formData.visitors}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white focus:outline-none focus:border-gold-500 transition-colors"
+                        className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] focus:outline-none focus:border-gold-500 transition-colors"
                       >
                         {form.visitorsOptions.map((option) => (
-                          <option key={option} value={option} className="bg-wine-800">{option}</option>
+                          <option key={option} value={option} className="bg-white">{option}</option>
                         ))}
                       </select>
                     </div>
@@ -270,7 +270,7 @@ export function ContactForm() {
                       onChange={handleChange}
                       rows={4}
                       placeholder={t('contact.form.messagePlaceholder')}
-                      className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-sm text-white placeholder-white/40 focus:outline-none focus:border-gold-500 transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-white border border-[#D4C9B8] rounded-sm text-[#2C2417] placeholder-[#A69889] focus:outline-none focus:border-gold-500 transition-colors resize-none"
                     />
                   </div>
 
@@ -294,7 +294,7 @@ export function ContactForm() {
                   </button>
 
                   {contactFormConfig.privacyNotice && (
-                    <p className="text-xs text-white/50 text-center">
+                    <p className="text-xs text-[#6B5D4D] text-center">
                       {t('contact.form.privacy')}
                     </p>
                   )}

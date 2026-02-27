@@ -66,7 +66,7 @@
             },
             "personal": {
                 "title": "Personal Touch",
-                "desc": "Every journey is personally curated by Teresa to match your interests and pace."
+                "desc": "Every journey is personally curated by our team to match your interests and pace."
             },
             "flexible": {
                 "title": "Flexible Pacing",
@@ -77,7 +77,7 @@
                 "desc": "Exclusive access to family farms, private vineyards, and local homes off the tourist path."
             }
         },
-        "quote": "Teresa didn't just show us Campania — she made us feel like we belonged there."
+        "quote": "The Paestum Holidays team didn't just show us Campania — they made us feel like we belonged there."
     },
     "destinations": {
         "script": "Explore",
@@ -141,42 +141,42 @@
         }
     },
     "about": {
-        "script": "Meet Teresa",
+        "script": "Meet the Team",
         "subtitle": "YOUR CURATOR",
         "title": "The Heart Behind\nYour Journey",
-        "intro": "For over 20 years, Teresa has been sharing her beloved Cilento with travelers from around the world. Her deep connections, local knowledge, and genuine passion create experiences that transform visitors into family.",
+        "intro": "For over 20 years, our team has been sharing the beloved Cilento with travelers from around the world. Deep connections, local knowledge, and genuine passion create experiences that transform visitors into family.",
         "timeline": {
             "2004": "Paestum Holidays founded",
             "2010": "First Roots Holiday organized",
             "2015": "Expanded to full Campania region",
             "2020": "500th happy traveler celebration",
-            "2024": "FELIX DREAM brand launched"
+            "2024": "Paestum Holidays brand relaunched"
         },
         "tabs": {
             "story": {
-                "name": "Teresa's Story",
+                "name": "Our Story",
                 "title": "Born and Raised in Cilento",
-                "desc": "Teresa grew up among the olive groves and vineyards of Cilento. Her childhood was filled with the flavors of her grandmother's cooking, the stories of village elders, and the ancient rhythms of Mediterranean life.",
-                "highlight": "Every journey I create is personal — because Cilento isn't just where I work, it's where my heart lives."
+                "desc": "Our team grew up among the olive groves and vineyards of Cilento. Childhoods filled with the flavors of grandmothers' cooking, the stories of village elders, and the ancient rhythms of Mediterranean life.",
+                "highlight": "Every journey we create is personal — because Cilento isn't just where we work, it's where our hearts live."
             },
             "philosophy": {
                 "name": "Philosophy",
                 "title": "Travel That Transforms",
-                "desc": "Teresa believes that the best travel experiences come from genuine human connection. Her approach combines deep local knowledge with intuitive understanding of what each traveler seeks.",
-                "highlight": "I don't plan itineraries — I craft journeys that touch the soul."
+                "desc": "We believe that the best travel experiences come from genuine human connection. Our approach combines deep local knowledge with intuitive understanding of what each traveler seeks.",
+                "highlight": "We don't plan itineraries — we craft journeys that touch the soul."
             },
             "expertise": {
                 "name": "Expertise",
                 "title": "20+ Years of Local Knowledge",
-                "desc": "Fluent in four languages, Teresa has built relationships with local farmers, artisans, chefs, and families across Campania. This network opens doors that remain closed to typical tourists.",
-                "highlight": "My connections are your passport to authentic Italy."
+                "desc": "Fluent in four languages, our team has built relationships with local farmers, artisans, chefs, and families across Campania. This network opens doors that remain closed to typical tourists.",
+                "highlight": "Our connections are your passport to authentic Italy."
             }
         },
         "hours": "Available 7 days a week",
         "hoursLabel": "Availability",
-        "cta": "Meet Teresa",
+        "cta": "Meet the Team",
         "years": "Years",
-        "quote": "Teresa's knowledge of Cilento is encyclopedic, but it's her warmth and genuine care that made our trip unforgettable."
+        "quote": "The team's knowledge of Cilento is encyclopedic, but it's their warmth and genuine care that made our trip unforgettable."
     },
     "stories": {
         "script": "Stories",
@@ -210,9 +210,9 @@
             "script": "Testimonials",
             "subtitle": "TRAVELER STORIES",
             "title": "Words from\nOur Guests",
-            "1": "Teresa didn't just show us Campania — she made us feel like we belonged there. Every meal, every conversation, every view was carefully chosen.",
-            "2": "After 40 years of wondering about my grandfather's village, Teresa helped me walk those same streets and meet family I never knew I had.",
-            "3": "We've traveled extensively in Italy, but Cilento with Teresa showed us a side of the country we never knew existed. Authentic, warm, unforgettable."
+            "1": "The Paestum Holidays team didn't just show us Campania — they made us feel like we belonged there. Every meal, every conversation, every view was carefully chosen.",
+            "2": "After 40 years of wondering about my grandfather's village, the team helped me walk those same streets and meet family I never knew I had.",
+            "3": "We've traveled extensively in Italy, but Cilento with Paestum Holidays showed us a side of the country we never knew existed. Authentic, warm, unforgettable."
         },
         "story": {
             "script": "Our Story",
@@ -227,7 +227,7 @@
         "script": "Get in Touch",
         "subtitle": "START YOUR JOURNEY",
         "title": "Let's Plan Your\nPerfect Trip",
-        "intro": "Every great journey begins with a conversation. Share your dreams, and Teresa will craft an experience that exceeds them.",
+        "intro": "Every great journey begins with a conversation. Share your dreams, and our team will craft an experience that exceeds them.",
         "infoTitle": "Contact Information",
         "info": {
             "location": "Location",
@@ -251,7 +251,7 @@
             "messagePlaceholder": "What experiences are you looking for? Any special interests or requests?",
             "submit": "Send Inquiry →",
             "submitting": "Sending...",
-            "success": "Thank you! Teresa will contact you within 24 hours.",
+            "success": "Thank you! Our team will contact you within 24 hours.",
             "error": "Something went wrong. Please try again or contact us directly.",
             "privacy": "Your information is kept confidential and used only to plan your journey with us."
         }

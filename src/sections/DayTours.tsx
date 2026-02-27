@@ -55,10 +55,10 @@ export function DayTours() {
           <span className="text-gold-500 text-xs uppercase tracking-[0.2em] mb-4 block">
             {t('dayTours.subtitle')}
           </span>
-          <h2 className="font-serif text-h1 text-white whitespace-pre-line">
+          <h2 className="font-serif text-h1 text-[#2C2417] whitespace-pre-line">
             {t('dayTours.title')}
           </h2>
-          <p className="text-white/70 max-w-2xl mx-auto mt-6">
+          <p className="text-[#6B5D4D] max-w-2xl mx-auto mt-6">
             {t('dayTours.intro')}
           </p>
         </div>
@@ -68,7 +68,7 @@ export function DayTours() {
           {tours.map((tour, index) => (
             <div
               key={tour.id}
-              className="scale-in group relative bg-white/5 border border-white/10 rounded-lg overflow-hidden hover:border-gold-500/30 transition-all duration-500"
+              className="scale-in group relative bg-[#EDE6DA] border border-[#D4C9B8] rounded-lg overflow-hidden hover:border-gold-500/30 transition-all duration-500"
               style={{ transitionDelay: `${index * 0.1}s` }}
             >
               {/* Image */}
@@ -90,10 +90,10 @@ export function DayTours() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-serif text-xl text-white mb-2 group-hover:text-gold-400 transition-colors">
+                <h3 className="font-serif text-xl text-[#2C2417] mb-2 group-hover:text-gold-600 transition-colors">
                   {t(`dayTours.items.${tourKeys[tour.id] || tour.id}.name`)}
                 </h3>
-                <p className="text-white/60 text-sm leading-relaxed mb-4">
+                <p className="text-[#6B5D4D] text-sm leading-relaxed mb-4">
                   {t(`dayTours.items.${tourKeys[tour.id] || tour.id}.desc`)}
                 </p>
 
@@ -104,7 +104,7 @@ export function DayTours() {
                       const element = document.querySelector('#contact');
                       if (element) element.scrollIntoView({ behavior: 'smooth' });
                     }}
-                    className="flex items-center gap-1 text-sm text-white/70 hover:text-gold-400 transition-colors group/btn"
+                    className="flex items-center gap-1 text-sm text-[#6B5D4D] hover:text-gold-600 transition-colors group/btn"
                   >
                     {t('nav.bookNow')}
                     <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />

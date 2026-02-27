@@ -50,7 +50,7 @@ export function Navigation() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-        ? 'bg-wine-800/95 backdrop-blur-md py-3'
+        ? 'bg-[#FDFBF7]/95 backdrop-blur-md py-3 shadow-sm'
         : 'bg-transparent py-5'
         }`}
       role="navigation"
@@ -63,11 +63,7 @@ export function Navigation() {
           className="flex items-center gap-3 group"
           aria-label={navigationConfig.brandName}
         >
-          <img src="/images/felix-dream-logo.png" alt="Felix Dream" className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110" />
-          <div className="flex flex-col">
-            <span className="font-serif text-xl text-white tracking-wide">{navigationConfig.brandName}</span>
-            <span className="text-[10px] text-gold-400 tracking-widest uppercase">{navigationConfig.tagline}</span>
-          </div>
+          <img src="/images/paestum-logo-full.svg" alt="Paestum Holidays" className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
         </button>
 
         {/* Desktop Navigation */}
@@ -82,7 +78,7 @@ export function Navigation() {
             >
               <button
                 onClick={() => !link.dropdown && scrollToSection(link.href)}
-                className="flex items-center gap-1 text-sm text-white/80 hover:text-gold-400 transition-colors duration-300 py-2"
+                className={`flex items-center gap-1 text-sm ${isScrolled ? 'text-[#2C2417]/80 hover:text-gold-600' : 'text-white/80 hover:text-gold-400'} transition-colors duration-300 py-2`}
                 role="menuitem"
                 aria-haspopup={link.dropdown ? 'true' : undefined}
                 aria-expanded={link.dropdown ? activeDropdown === link.name : undefined}
@@ -103,12 +99,12 @@ export function Navigation() {
                     }`}
                   role="menu"
                 >
-                  <div className="bg-wine-800/95 backdrop-blur-md rounded-md overflow-hidden min-w-[180px] border border-white/10">
+                  <div className="bg-[#FDFBF7]/95 backdrop-blur-md rounded-md overflow-hidden min-w-[180px] border border-[#D4C9B8] shadow-lg">
                     {link.dropdown.map((item) => (
                       <button
                         key={item.name}
                         onClick={() => scrollToSection(item.href)}
-                        className="block w-full text-left px-4 py-3 text-sm text-white/80 hover:bg-gold-500/20 hover:text-gold-400 transition-colors"
+                        className="block w-full text-left px-4 py-3 text-sm text-[#2C2417]/80 hover:bg-gold-500/10 hover:text-gold-600 transition-colors"
                         role="menuitem"
                       >
                         {t(item.name)}
@@ -122,7 +118,7 @@ export function Navigation() {
         </div>
 
         <div className="hidden lg:flex items-center gap-6">
-          <LanguageSwitcher />
+          <LanguageSwitcher isScrolled={isScrolled} />
 
           {/* CTA Button */}
           {navigationConfig.ctaButtonText && (
@@ -138,7 +134,7 @@ export function Navigation() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden p-2 text-white"
+          className={`lg:hidden p-2 ${isScrolled ? 'text-[#2C2417]' : 'text-white'}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={isMobileMenuOpen}
@@ -153,7 +149,7 @@ export function Navigation() {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden fixed inset-0 top-[72px] bg-wine-900/98 backdrop-blur-lg transition-all duration-500 ${isMobileMenuOpen
+        className={`lg:hidden fixed inset-0 top-[72px] bg-[#FDFBF7]/98 backdrop-blur-lg transition-all duration-500 ${isMobileMenuOpen
           ? 'opacity-100 visible'
           : 'opacity-0 invisible pointer-events-none'
           }`}
@@ -173,7 +169,7 @@ export function Navigation() {
                   <div>
                     <button
                       onClick={() => setActiveDropdown(activeDropdown === link.name ? null : link.name)}
-                      className="flex items-center justify-between w-full py-4 text-lg text-white border-b border-white/10"
+                      className="flex items-center justify-between w-full py-4 text-lg text-[#2C2417] border-b border-[#D4C9B8]"
                       aria-expanded={activeDropdown === link.name}
                       role="menuitem"
                     >
@@ -193,7 +189,7 @@ export function Navigation() {
                         <button
                           key={item.name}
                           onClick={() => scrollToSection(item.href)}
-                          className="block w-full text-left pl-12 py-3 text-white/70 hover:text-gold-400"
+                          className="block w-full text-left pl-12 py-3 text-[#6B5D4D] hover:text-gold-600"
                           role="menuitem"
                         >
                           {t(item.name)}
@@ -204,7 +200,7 @@ export function Navigation() {
                 ) : (
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="flex items-center gap-3 w-full py-4 text-lg text-white border-b border-white/10 hover:text-gold-400 transition-colors"
+                    className="flex items-center gap-3 w-full py-4 text-lg text-[#2C2417] border-b border-[#D4C9B8] hover:text-gold-600 transition-colors"
                     role="menuitem"
                   >
                     {IconComponent && <IconComponent className="w-5 h-5 text-gold-500" />}
@@ -215,8 +211,8 @@ export function Navigation() {
             );
           })}
 
-          <div className="border-b border-white/10 py-4 mb-2">
-            <LanguageSwitcher />
+          <div className="border-b border-[#D4C9B8] py-4 mb-2">
+            <LanguageSwitcher isScrolled={true} />
           </div>
 
           {navigationConfig.ctaButtonText && (

@@ -55,20 +55,14 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative border-t border-white/10" role="contentinfo">
+    <footer className="relative bg-[#2C2417] border-t border-[#D4C9B8]" role="contentinfo">
       {/* Main Footer */}
       <div className="container-custom py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/images/felix-dream-logo.png" alt="Felix Dream" className="w-10 h-10 object-contain" />
-              <div>
-                <span className="font-serif text-xl text-white block">{footerConfig.brandName}</span>
-                {footerConfig.tagline && (
-                  <span className="text-[10px] text-gold-400 tracking-widest uppercase">{footerConfig.tagline}</span>
-                )}
-              </div>
+              <img src="/images/paestum-logo-full.svg" alt="Paestum Holidays" className="h-10 w-auto object-contain" />
             </div>
             {footerConfig.description && (
               <p className="text-white/70 text-sm leading-relaxed mb-6">
@@ -213,7 +207,7 @@ export function Footer() {
 
       {/* Age Verification Note */}
       {footerConfig.ageVerificationText && (
-        <div className="bg-wine-900 py-3">
+        <div className="bg-[#231D13] py-3">
           <div className="container-custom">
             <p className="text-center text-white/50 text-xs">
               {footerConfig.ageVerificationText}

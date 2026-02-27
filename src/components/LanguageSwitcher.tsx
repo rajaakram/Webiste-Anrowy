@@ -9,7 +9,7 @@ const languages = [
     { code: 'es', label: 'ES', name: 'Español' },
 ];
 
-export function LanguageSwitcher() {
+export function LanguageSwitcher({ isScrolled = false }: { isScrolled?: boolean }) {
     const { i18n } = useTranslation();
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
@@ -36,7 +36,7 @@ export function LanguageSwitcher() {
         <div className="relative" ref={dropdownRef}>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex items-center gap-1.5 text-sm text-white/80 hover:text-gold-400 transition-colors duration-300 py-2"
+                className={`flex items-center gap-1.5 text-sm ${isScrolled ? 'text-[#2C2417]/80 hover:text-gold-600' : 'text-white/80 hover:text-gold-400'} transition-colors duration-300 py-2`}
                 aria-label="Change language"
             >
                 <Globe className="w-4 h-4" />
@@ -47,7 +47,7 @@ export function LanguageSwitcher() {
             </button>
 
             <div
-                className={`absolute right-0 top-full mt-2 w-36 rounded-md bg-wine-800/95 backdrop-blur-md border border-white/10 shadow-lg overflow-hidden transition-all duration-300 transform origin-top-right ${isOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
+                className={`absolute right-0 top-full mt-2 w-36 rounded-md bg-[#FDFBF7]/95 backdrop-blur-md border border-[#D4C9B8] shadow-lg overflow-hidden transition-all duration-300 transform origin-top-right ${isOpen ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
                     }`}
             >
                 <div className="py-1">
@@ -56,8 +56,8 @@ export function LanguageSwitcher() {
                             key={lang.code}
                             onClick={() => handleLanguageChange(lang.code)}
                             className={`w-full text-left px-4 py-2.5 text-sm transition-colors duration-200 flex items-center justify-between ${i18n.resolvedLanguage === lang.code
-                                    ? 'bg-gold-500/20 text-gold-400 font-medium'
-                                    : 'text-white/80 hover:bg-white/5 hover:text-white'
+                                ? 'bg-gold-500/10 text-gold-600 font-medium'
+                                : 'text-[#2C2417]/80 hover:bg-[#EDE6DA] hover:text-[#2C2417]'
                                 }`}
                         >
                             {lang.name}

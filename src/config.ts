@@ -1,5 +1,5 @@
 // =============================================================================
-// FELIX DREAM - Paestum Holidays Configuration
+// Paestum Holidays Configuration
 // =============================================================================
 // Luxury curated travel experiences in Cilento, Italy
 // =============================================================================
@@ -17,8 +17,8 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  title: "FELIX DREAM | Paestum Holidays - Curated Travel Experiences in Cilento, Italy",
-  description: "Discover the authentic Cilento with personalized travel experiences. Heritage tours, culinary journeys, and roots holidays curated by Teresa with over 20 years of expertise.",
+  title: "Paestum Holidays - Curated Travel Experiences in Cilento, Italy",
+  description: "Discover the authentic Cilento with personalized travel experiences. Heritage tours, culinary journeys, and roots holidays curated by our expert team with over 20 years of expertise.",
   language: "en",
   keywords: "Cilento travel, Paestum holidays, Italy tours, heritage travel, culinary experiences, roots holidays, Amalfi Coast, Italian vacation",
   ogImage: "/images/hero-cilento-coast.jpg",
@@ -49,8 +49,8 @@ export interface NavigationConfig {
 }
 
 export const navigationConfig: NavigationConfig = {
-  brandName: "FELIX DREAM",
-  brandSubname: "by PAESTUM HOLIDAYS",
+  brandName: "PAESTUM HOLIDAYS",
+  brandSubname: "",
   tagline: "Curated Travel Experiences",
   navLinks: [
     { name: "nav.home", href: "#home", icon: "Home" },
@@ -82,8 +82,8 @@ export interface PreloaderConfig {
 }
 
 export const preloaderConfig: PreloaderConfig = {
-  brandName: "FELIX DREAM",
-  brandSubname: "by PAESTUM HOLIDAYS",
+  brandName: "PAESTUM HOLIDAYS",
+  brandSubname: "Curated Travel Experiences",
   yearText: "Est. 2004",
 };
 
@@ -217,7 +217,7 @@ export const experienceShowcaseConfig: ExperienceShowcaseConfig = {
     {
       icon: "Thermometer",
       title: "Personal Touch",
-      description: "Every journey is personally curated by Teresa to match your interests and pace.",
+      description: "Every journey is personally curated by our team to match your interests and pace.",
     },
     {
       icon: "Clock",
@@ -231,7 +231,7 @@ export const experienceShowcaseConfig: ExperienceShowcaseConfig = {
     },
   ],
   quote: {
-    text: "Teresa didn't just show us Campania — she made us feel like we belonged there.",
+    text: "The Paestum Holidays team didn't just show us Campania — they made us feel like we belonged there.",
     attribution: "Sarah M., New York",
     prefix: "★★★★★",
   },
@@ -344,27 +344,27 @@ export interface AboutConfig {
 }
 
 export const aboutConfig: AboutConfig = {
-  scriptText: "Meet Teresa",
+  scriptText: "Meet the Team",
   subtitle: "YOUR CURATOR",
   mainTitle: "The Heart Behind\nYour Journey",
-  introText: "For over 20 years, Teresa has been sharing her beloved Cilento with travelers from around the world. Her deep connections, local knowledge, and genuine passion create experiences that transform visitors into family.",
+  introText: "For over 20 years, our team has been sharing the beloved Cilento with travelers from around the world. Deep connections, local knowledge, and genuine passion create experiences that transform visitors into family.",
   timeline: [
     { year: "2004", event: "Paestum Holidays founded" },
     { year: "2010", event: "First Roots Holiday organized" },
     { year: "2015", event: "Expanded to full Campania region" },
     { year: "2020", event: "500th happy traveler celebration" },
-    { year: "2024", event: "FELIX DREAM brand launched" },
+    { year: "2024", event: "Paestum Holidays brand relaunched" },
   ],
   tabs: [
     {
       id: "story",
-      name: "Teresa's Story",
+      name: "Our Story",
       icon: "History",
       image: "/images/teresa-portrait.jpg",
       content: {
         title: "Born and Raised in Cilento",
-        description: "Teresa grew up among the olive groves and vineyards of Cilento. Her childhood was filled with the flavors of her grandmother's cooking, the stories of village elders, and the ancient rhythms of Mediterranean life.",
-        highlight: "Every journey I create is personal — because Cilento isn't just where I work, it's where my heart lives.",
+        description: "Our team grew up among the olive groves and vineyards of Cilento. Childhoods filled with the flavors of grandmothers' cooking, the stories of village elders, and the ancient rhythms of Mediterranean life.",
+        highlight: "Every journey we create is personal — because Cilento isn't just where we work, it's where our hearts live.",
       },
     },
     {
@@ -374,8 +374,8 @@ export const aboutConfig: AboutConfig = {
       image: "/images/experience-roots.jpg",
       content: {
         title: "Travel That Transforms",
-        description: "Teresa believes that the best travel experiences come from genuine human connection. Her approach combines deep local knowledge with intuitive understanding of what each traveler seeks.",
-        highlight: "I don't plan itineraries — I craft journeys that touch the soul.",
+        description: "We believe that the best travel experiences come from genuine human connection. Our approach combines deep local knowledge with intuitive understanding of what each traveler seeks.",
+        highlight: "We don't plan itineraries — we craft journeys that touch the soul.",
       },
     },
     {
@@ -385,22 +385,22 @@ export const aboutConfig: AboutConfig = {
       image: "/images/dest-castellabate.jpg",
       content: {
         title: "20+ Years of Local Knowledge",
-        description: "Fluent in four languages, Teresa has built relationships with local farmers, artisans, chefs, and families across Campania. This network opens doors that remain closed to typical tourists.",
-        highlight: "My connections are your passport to authentic Italy.",
+        description: "Fluent in four languages, our team has built relationships with local farmers, artisans, chefs, and families across Campania. This network opens doors that remain closed to typical tourists.",
+        highlight: "Our connections are your passport to authentic Italy.",
       },
     },
   ],
   openingHours: "Available 7 days a week",
   openingHoursLabel: "Availability",
-  ctaButtonText: "Meet Teresa",
+  ctaButtonText: "Meet the Team",
   yearBadge: "20+",
   yearBadgeLabel: "Years",
   quote: {
     prefix: "★★★★★",
-    text: "Teresa's knowledge of Cilento is encyclopedic, but it's her warmth and genuine care that made our trip unforgettable.",
+    text: "The team's knowledge of Cilento is encyclopedic, but it's their warmth and genuine care that made our trip unforgettable.",
     attribution: "The Martinez Family, Buenos Aires",
   },
-  founderPhotoAlt: "Teresa - Your Cilento Curator",
+  founderPhotoAlt: "Paestum Holidays Team - Your Cilento Curators",
   founderPhoto: "/images/teresa-portrait.jpg",
 };
 
@@ -502,19 +502,19 @@ export const storiesConfig: StoriesConfig = {
     {
       name: "Sarah Mitchell",
       role: "New York, USA",
-      text: "Teresa didn't just show us Campania — she made us feel like we belonged there. Every meal, every conversation, every view was carefully chosen.",
+      text: "The Paestum Holidays team didn't just show us Campania — they made us feel like we belonged there. Every meal, every conversation, every view was carefully chosen.",
       rating: 5,
     },
     {
       name: "Giovanni Rossi",
       role: "Buenos Aires, Argentina",
-      text: "After 40 years of wondering about my grandfather's village, Teresa helped me walk those same streets and meet family I never knew I had.",
+      text: "After 40 years of wondering about my grandfather's village, the team helped me walk those same streets and meet family I never knew I had.",
       rating: 5,
     },
     {
       name: "Emma & James Chen",
       role: "London, UK",
-      text: "We've traveled extensively in Italy, but Cilento with Teresa showed us a side of the country we never knew existed. Authentic, warm, unforgettable.",
+      text: "We've traveled extensively in Italy, but Cilento with Paestum Holidays showed us a side of the country we never knew existed. Authentic, warm, unforgettable.",
       rating: 5,
     },
   ],
@@ -534,7 +534,7 @@ export const storiesConfig: StoriesConfig = {
   storyQuote: {
     prefix: "",
     text: "The best journeys don't just show you new places — they reveal new parts of yourself.",
-    attribution: "Teresa",
+    attribution: "The Paestum Holidays Team",
   },
   storyImage: "/images/testimonials-dinner.jpg",
   storyImageCaption: "An evening of authentic Cilento hospitality",
@@ -584,7 +584,7 @@ export const contactFormConfig: ContactFormConfig = {
   scriptText: "Get in Touch",
   subtitle: "START YOUR JOURNEY",
   mainTitle: "Let's Plan Your\nPerfect Trip",
-  introText: "Every great journey begins with a conversation. Share your dreams, and Teresa will craft an experience that exceeds them.",
+  introText: "Every great journey begins with a conversation. Share your dreams, and our team will craft an experience that exceeds them.",
   contactInfoTitle: "Contact Information",
   contactInfo: [
     {
@@ -626,7 +626,7 @@ export const contactFormConfig: ContactFormConfig = {
     messagePlaceholder: "What experiences are you looking for? Any special interests or requests?",
     submitText: "Send Inquiry →",
     submittingText: "Sending...",
-    successMessage: "Thank you! Teresa will contact you within 24 hours.",
+    successMessage: "Thank you! Our team will contact you within 24 hours.",
     errorMessage: "Something went wrong. Please try again or contact us directly.",
   },
   privacyNotice: "Your information is kept confidential and used only to plan your journey with us.",
@@ -678,8 +678,8 @@ export interface FooterConfig {
 }
 
 export const footerConfig: FooterConfig = {
-  brandName: "FELIX DREAM",
-  tagline: "by PAESTUM HOLIDAYS",
+  brandName: "PAESTUM HOLIDAYS",
+  tagline: "Curated Travel Experiences",
   description: "Curated travel experiences in Cilento, Italy. Authentic journeys crafted with passion and 20+ years of local expertise.",
   socialLinks: [
     { icon: "Instagram", label: "Instagram", href: "https://instagram.com/paestumholidays" },
@@ -734,7 +734,7 @@ export const footerConfig: FooterConfig = {
   newsletterSuccessText: "Thank you for subscribing!",
   newsletterErrorText: "Something went wrong. Please try again.",
   newsletterEndpoint: "https://formspree.io/f/YOUR_NEWSLETTER_ID",
-  copyrightText: "© 2026 FELIX DREAM by Paestum Holidays. All rights reserved.",
+  copyrightText: "© 2026 Paestum Holidays. All rights reserved.",
   legalLinks: ["Privacy Policy", "Terms of Use", "Cookie Policy"],
   icpText: "",
   backToTopText: "Back to top",
